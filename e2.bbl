@@ -23,12 +23,6 @@ Arnold, J.~E., Tanenhaus, M.~K., Altmann, R.~J., and Fagnano, M. (2004).
 \newblock {The Old and Thee, uh, New}.
 \newblock {\em Psychological Science}, 15(9):578--582.
 
-\bibitem[Barr and Seyfeddinipur, 2010]{Barr2010}
-Barr, D. and Seyfeddinipur, M. (2010).
-\newblock {The role of fillers in listener attributions for speaker
-  disfluency}.
-\newblock {\em Language and cognitive processes}, 25(4):441--455.
-
 \bibitem[Barr, 2001]{Barr2001}
 Barr, D.~J. (2001).
 \newblock {Trouble in mind: Paralinguistic indices of effort and uncertainty in
@@ -37,11 +31,30 @@ Barr, D.~J. (2001).
   Oralit{\'{e}} and gestualit{\'{e}}: Interactions et comportements multimodaux
   dans la communication}, pages 597--600. Paris: L'Harmattan.
 
+\bibitem[Barr, 2004]{Barr2004}
+Barr, D.~J. (2004).
+\newblock {Establishing conventional communication systems: Is common knowledge
+  necessary?}
+\newblock {\em Cognitive Science}, 28(6):937--962.
+
 \bibitem[Barr, 2008]{Barr2008}
 Barr, D.~J. (2008).
 \newblock {Analyzing ‘visual world' eyetracking data using multilevel
   logistic regression}.
 \newblock {\em Journal of Memory and Language}, 59(4):457--474.
+
+\bibitem[Barr, 2014]{Barr2014}
+Barr, D.~J. (2014).
+\newblock {Perspective Taking and its Impostors in Language Use: Four Patterns
+  of Deception}.
+\newblock {\em The Oxford Handbook of Language and Social Psychology}, pages
+  98--110.
+
+\bibitem[Barr and Seyfeddinipur, 2010]{Barr2010}
+Barr, D.~J. and Seyfeddinipur, M. (2010).
+\newblock {The role of fillers in listener attributions for speaker
+  disfluency}.
+\newblock {\em Language and Cognitive Processes}, 25(4):441--455.
 
 \bibitem[Bates et~al., 2015]{lme4}
 Bates, D., M{\"{a}}chler, M., Bolker, B., and Walker, S. (2015).
@@ -53,11 +66,6 @@ Beattie, G.~W. (1979).
 \newblock {Planning units in spontaneous speech: Some evidence from hesitation
   in speech and speaker gaze direction in conversation}.
 \newblock {\em Linguistics}, 17(1-2):61--78.
-
-\bibitem[Blank, 1988]{Blank1988}
-Blank, G.~D. (1988).
-\newblock {Metaphors in the Lexicon}.
-\newblock {\em Metaphors and Symbolic Activity}, 3(1):21--36.
 
 \bibitem[Bond and DePaulo, 2006]{Bond2006}
 Bond, C.~F. and DePaulo, B.~M. (2006).
@@ -94,12 +102,6 @@ Cook, S.~W., Jaeger, T.~F., and Tanenhaus, M.~K. (2009).
 \newblock {\em 31st Annual Conference of the Cognitive Science Society}, pages
   62--67.
 
-\bibitem[Corley and Hartsuiker, 2011]{Corley2011}
-Corley, M. and Hartsuiker, R.~J. (2011).
-\newblock {Why Um Helps Auditory Word Recognition: The Temporal Delay
-  Hypothesis}.
-\newblock {\em PLoS ONE}, 6(5):e19792.
-
 \bibitem[Corley et~al., 2007]{Corley2007}
 Corley, M., MacGregor, L.~J., and Donaldson, D.~I. (2007).
 \newblock {It's the way that you, er, say it: Hesitations in speech affect
@@ -129,11 +131,21 @@ Ferreira, F. and Bailey, K.~G. (2004).
   Subsequent Words in Spontaneous Speech}.
 \newblock {\em Journal of Memory and Language}, 34(6):709--738.
 
+\bibitem[Frazier et~al., 2006]{Frazier2006}
+Frazier, L., Carlson, K., and Clifton, C. (2006).
+\newblock {Prosodic phrasing is central to language comprehension}.
+\newblock {\em Trends in Cognitive Sciences}, 10(6):244--249.
+
 \bibitem[Heller et~al., 2015]{Heller2015}
 Heller, D., Arnold, J.~E., Klein, N., and Tanenhaus, M.~K. (2015).
 \newblock {Inferring Difficulty: Flexibility in the Real-time Processing of
   Disfluency}.
 \newblock {\em Language and Speech}, 58(2):190--203.
+
+\bibitem[Hostetter, 2011]{Hostetter2011}
+Hostetter, A.~B. (2011).
+\newblock {When do gestures communicate? A meta-analysis.}
+\newblock {\em Psychological bulletin}, 137(2):297--315.
 
 \bibitem[Krahmer and Swerts, 2005]{Krahmer2005}
 Krahmer, E. and Swerts, M. (2005).
@@ -153,10 +165,11 @@ Lau, E.~F. and Ferreira, F. (2005).
   path sentences}.
 \newblock {\em Language and Cognitive Processes}, 20(5):633--666.
 
-\bibitem[Lickley and Bard, 1998]{Lickley1998}
-Lickley, R.~J. and Bard, E.~G. (1998).
-\newblock {When can listeners detect disfluency in spontaneous speech?}
-\newblock {\em Language and speech}, 41 ( Pt 2):203--226.
+\bibitem[Lin et~al., 2010]{Lin2010}
+Lin, S., Keysar, B., and Epley, N. (2010).
+\newblock {Reflexively mindblind: Using theory of mind to interpret behavior
+  requires effortful attention}.
+\newblock {\em Journal of Experimental Social Psychology}, 46(3):551--556.
 
 \bibitem[Loy et~al., 2016]{Loy2016}
 Loy, J.~E., Rohde, H., and Corley, M. (2016).
@@ -168,6 +181,12 @@ Math{\^{o}}t, S., Schreij, D., and Theeuwes, J. (2012).
 \newblock {OpenSesame: An open-source, graphical experiment builder for the
   social sciences}.
 \newblock {\em Behavior Research Methods}, 44(2):314--324.
+
+\bibitem[Pickering and Garrod, 2004]{Pickering2004}
+Pickering, M.~J. and Garrod, S. (2004).
+\newblock {Toward a mechanistic psychology of dialogue.}
+\newblock {\em The Behavioral and brain sciences}, 27(2):169--190; discussion
+  190--226.
 
 \bibitem[{R Core Team}, 2016]{rbase}
 {R Core Team} (2016).

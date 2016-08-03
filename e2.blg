@@ -3,50 +3,50 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: e2.aux
 The style file: apalike.bst
 Database file #1: e2.bib
-Repeated entry---line 938 of file e2.bib
+Repeated entry---line 913 of file e2.bib
  : @article{Barr2010
  :                  ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Goldman-Eisler1968"
-You've used 35 entries,
+You've used 38 entries,
             1935 wiz_defined-function locations,
-            721 strings with 9807 characters,
-and the built_in function-call counts, 14274 in all, are:
-= -- 1447
-> -- 523
-< -- 23
-+ -- 169
-- -- 169
-* -- 1282
-:= -- 2452
-add.period$ -- 106
-call.type$ -- 35
-change.case$ -- 257
-chr.to.int$ -- 35
-cite$ -- 35
-duplicate$ -- 508
-empty$ -- 1029
-format.name$ -- 230
-if$ -- 2772
+            735 strings with 10300 characters,
+and the built_in function-call counts, 15754 in all, are:
+= -- 1606
+> -- 560
+< -- 25
++ -- 181
+- -- 181
+* -- 1413
+:= -- 2685
+add.period$ -- 115
+call.type$ -- 38
+change.case$ -- 278
+chr.to.int$ -- 38
+cite$ -- 38
+duplicate$ -- 557
+empty$ -- 1146
+format.name$ -- 243
+if$ -- 3071
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 34
-newline$ -- 178
-num.names$ -- 107
-pop$ -- 178
+missing$ -- 37
+newline$ -- 193
+num.names$ -- 116
+pop$ -- 194
 preamble$ -- 1
-purify$ -- 258
+purify$ -- 279
 quote$ -- 0
-skip$ -- 390
+skip$ -- 430
 stack$ -- 0
-substring$ -- 1196
-swap$ -- 52
-text.length$ -- 2
+substring$ -- 1386
+swap$ -- 62
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 210
+type$ -- 228
 warning$ -- 0
-while$ -- 138
+while$ -- 153
 width$ -- 0
-write$ -- 457
+write$ -- 496
 (There was 1 error message)
