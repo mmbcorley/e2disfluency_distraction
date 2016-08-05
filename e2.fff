@@ -2,6 +2,16 @@
 \ifnextchar[{\eatarg}{}
 
   \centering
+\includegraphics[scale=.2]{convincer.png}
+  \caption{Screenshot of video presented to participants as an example of speaker producing utterances in a noisy environment. Screenshot shows an example of speaker producing a disfluent and dishonest utterance.}
+  \label{fig:vid}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+  \centering
 \includegraphics[scale=.5]{mflu.png}
   \caption{Mean proportion of cumulative distance traveled toward each object (referent or distractor) in fluent conditions split by presence of speaker distraction, from referent onset to 2000ms post-onset. Proportions calculated out of total cumulative distance moved the mouse from referent-onset until that time bin. Shaded areas represent $\pm 1$ standard error of the mean.}
   \label{fig:mflu}

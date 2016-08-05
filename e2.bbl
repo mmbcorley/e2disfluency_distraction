@@ -23,6 +23,12 @@ Arnold, J.~E., Tanenhaus, M.~K., Altmann, R.~J., and Fagnano, M. (2004).
 \newblock {The Old and Thee, uh, New}.
 \newblock {\em Psychological Science}, 15(9):578--582.
 
+\bibitem[Barr and Seyfeddinipur, 2010]{Barr2010}
+Barr, D. and Seyfeddinipur, M. (2010).
+\newblock {The role of fillers in listener attributions for speaker
+  disfluency}.
+\newblock {\em Language and cognitive processes}, 25(4):441--455.
+
 \bibitem[Barr, 2001]{Barr2001}
 Barr, D.~J. (2001).
 \newblock {Trouble in mind: Paralinguistic indices of effort and uncertainty in
@@ -49,12 +55,6 @@ Barr, D.~J. (2014).
   of Deception}.
 \newblock {\em The Oxford Handbook of Language and Social Psychology}, pages
   98--110.
-
-\bibitem[Barr and Seyfeddinipur, 2010]{Barr2010}
-Barr, D.~J. and Seyfeddinipur, M. (2010).
-\newblock {The role of fillers in listener attributions for speaker
-  disfluency}.
-\newblock {\em Language and Cognitive Processes}, 25(4):441--455.
 
 \bibitem[Bates et~al., 2015]{lme4}
 Bates, D., M{\"{a}}chler, M., Bolker, B., and Walker, S. (2015).
@@ -120,11 +120,6 @@ Fernald, A. and Mazzie, C. (1991).
 \newblock {Prosody and focus in speech to infants and adults.}
 \newblock {\em Developmental Psychology}, 27(2):209--221.
 
-\bibitem[Ferreira and Bailey, 2004]{Ferreira2004a}
-Ferreira, F. and Bailey, K.~G. (2004).
-\newblock {Disfluencies and human language comprehension}.
-\newblock {\em Trends in Cognitive Sciences}, 8(5):231--237.
-
 \bibitem[{Fox Tree}, 1995]{FoxTree1995}
 {Fox Tree}, J.~E. (1995).
 \newblock {The Effects of False Starts and Repetitions on the Processing of
@@ -142,11 +137,6 @@ Heller, D., Arnold, J.~E., Klein, N., and Tanenhaus, M.~K. (2015).
   Disfluency}.
 \newblock {\em Language and Speech}, 58(2):190--203.
 
-\bibitem[Hostetter, 2011]{Hostetter2011}
-Hostetter, A.~B. (2011).
-\newblock {When do gestures communicate? A meta-analysis.}
-\newblock {\em Psychological bulletin}, 137(2):297--315.
-
 \bibitem[Krahmer and Swerts, 2005]{Krahmer2005}
 Krahmer, E. and Swerts, M. (2005).
 \newblock {How Children and Adults Produce and Perceive Uncertainty in
@@ -158,12 +148,6 @@ Kronm{\"{u}}ller, E. and Barr, D.~J. (2007).
 \newblock {Perspective-free pragmatics: Broken precedents and the
   recovery-from-preemption hypothesis☆}.
 \newblock {\em Journal of Memory and Language}, 56(3):436--455.
-
-\bibitem[Lau and Ferreira, 2005]{Lau2005}
-Lau, E.~F. and Ferreira, F. (2005).
-\newblock {Lingering effects of disfluent material on comprehension of garden
-  path sentences}.
-\newblock {\em Language and Cognitive Processes}, 20(5):633--666.
 
 \bibitem[Lin et~al., 2010]{Lin2010}
 Lin, S., Keysar, B., and Epley, N. (2010).
