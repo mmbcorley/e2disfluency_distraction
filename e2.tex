@@ -1,13 +1,18 @@
-\documentclass[man]{apa6}
-\usepackage[square]{natbib}
+\documentclass[man,natbib]{apa6}
+%\usepackage[square]{natbib}
 \usepackage{microtype}
 \usepackage{mathtools}
 \usepackage{hyperref}
 \usepackage{stmaryrd}
 \usepackage{tabularx}
 \usepackage[normalem]{ulem}
-\linespread{1.3}
-\hypersetup{colorlinks=true, citecolor=blue, urlcolor=red}
+\usepackage{color}
+%\linespread{1.3}
+% use apa defaults
+\hypersetup{hidelinks=true}
+% let's not be garish
+
+
 \shorttitle{disfluency/distraction}
 \abstract{Where the veracity of a statement is in question, listeners show a bias towards interpreting speaker disfluency as a sign of dishonesty. 
 This bias is not limited to post-hoc judgements, but can also be found during online speech processing. 
@@ -266,7 +271,7 @@ Alternatively, these findings could suggest that participants made early attribu
 
 
 \bibliography{e2}
-\bibliographystyle{apalike}
+%\bibliographystyle{apalike}
 
 
 \newpage
