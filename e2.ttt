@@ -1,41 +1,5 @@
 \begin{table*}[hbt]
 \ifnextchar[{\eatarg}{}
-[ht]
-\centering
-\begin{tabularx}{\linewidth}{|X|X|}
-\hline
-Did you find that these background noises were distracting for you as a listener? & 58\%\\
-   \hline
-Did you think that these background noises affected the speaker? & 50\%\\
-   \hline
-Did you think that the background noises, in some cases, might have caused the speaker to be disfluent (to say 'um' or 'uh')? & 50\%\\
-   \hline
-\end{tabularx}
-\caption{Percentage of participants who responded \textit{yes/possibly/probably}.}
-\label{table:questions}
-\end{table*}
-\efloatseparator
- 
-\begin{table*}[hbt]
-\ifnextchar[{\eatarg}{}
-[ht]
-\centering
-\begin{tabular}{rrrrrr}
-  \hline
-& \textbf{Delivery} & Disfluent & Disfluent & Fluent & Fluent \\
-& \textbf{Speaker-distraction} & Absent & Present & Absent & Present \\
-  \hline
-Distractor & &  62\% &  62\% &  23\% &  24\% \\
-  Referent & &  38\% &  38\% &  77\% &  76\% \\
-   \hline
-\end{tabular}
-\caption{Mouse clicks on each object by condition.}
-\label{table:objctclck}
-\end{table*}
-\efloatseparator
- 
-\begin{table*}[hbt]
-\ifnextchar[{\eatarg}{}
 
 \begin{tabularx}{\linewidth}{|X|X|X|X|}
   \hline
@@ -76,6 +40,42 @@ Dog barking & 1 \\
 \end{tabularx}
 \caption{Plausible causes of speaker distraction in filler items.}
 \label{table:fillernoise}
+\end{table*}
+\efloatseparator
+ 
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[ht]
+\centering
+\begin{tabularx}{\linewidth}{|X|X|}
+\hline
+Did you find that these background noises were distracting for you as a listener? & 58\%\\
+   \hline
+Did you think that these background noises affected the speaker? & 50\%\\
+   \hline
+Did you think that the background noises, in some cases, might have caused the speaker to be disfluent (to say 'um' or 'uh')? & 50\%\\
+   \hline
+\end{tabularx}
+\caption{Percentage of participants who responded \textit{yes/possibly/probably}.}
+\label{table:questions}
+\end{table*}
+\efloatseparator
+ 
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[ht]
+\centering
+\begin{tabular}{rrrrrr}
+  \hline
+& \textbf{Delivery} & Disfluent & Disfluent & Fluent & Fluent \\
+& \textbf{Speaker-distraction} & Absent & Present & Absent & Present \\
+  \hline
+Distractor & &  62\% &  62\% &  23\% &  24\% \\
+  Referent & &  38\% &  38\% &  77\% &  76\% \\
+   \hline
+\end{tabular}
+\caption{Mouse clicks on each object by condition.}
+\label{table:objctclck}
 \end{table*}
 \efloatseparator
  

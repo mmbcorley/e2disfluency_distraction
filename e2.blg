@@ -3,38 +3,34 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: e2.aux
 The style file: apalike.bst
 Database file #1: e2.bib
-Repeated entry---line 578 of file e2.bib
- : @article{Barr2010
- :                  ,
-I'm skipping whatever remains of this entry
 You've used 35 entries,
             1935 wiz_defined-function locations,
-            713 strings with 9861 characters,
-and the built_in function-call counts, 14583 in all, are:
-= -- 1484
-> -- 527
+            713 strings with 9894 characters,
+and the built_in function-call counts, 14624 in all, are:
+= -- 1488
+> -- 533
 < -- 22
-+ -- 171
-- -- 171
-* -- 1308
-:= -- 2487
++ -- 173
+- -- 173
+* -- 1314
+:= -- 2493
 add.period$ -- 106
 call.type$ -- 35
-change.case$ -- 258
+change.case$ -- 259
 chr.to.int$ -- 35
 cite$ -- 35
 duplicate$ -- 515
 empty$ -- 1056
-format.name$ -- 226
-if$ -- 2842
+format.name$ -- 230
+if$ -- 2850
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 34
 newline$ -- 178
 num.names$ -- 107
-pop$ -- 183
+pop$ -- 184
 preamble$ -- 1
-purify$ -- 259
+purify$ -- 260
 quote$ -- 0
 skip$ -- 397
 stack$ -- 0
@@ -48,4 +44,3 @@ warning$ -- 0
 while$ -- 141
 width$ -- 0
 write$ -- 457
-(There was 1 error message)
