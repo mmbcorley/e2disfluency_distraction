@@ -204,8 +204,6 @@ Speaker utterances were depicted in the first video as honest \& fluent, dishone
   \label{fig:vid}
 \end{figure}
 
-
-
 To ensure that analysis could be run only on data from participants for whom the cover story held, a post-test questionnaire assessed whether participants thought it believable that the utterances were produced naturally and in the suggested context. 
 This was double-checked by verbal questioning after participants were debriefed about the true nature of the experiment, by asking whether it occurred to them during the experiment that the recordings might not have been produced outside in the street.\\
 
@@ -256,7 +254,10 @@ Movements beyond the outer edge of either object were excluded on the basis that
 
 Model analysis for both eye- and mouse-movements were conducted over a time window from referent onset to 800ms post-onset. 
 This window coincides with \citet{Loy2016}, identified by evidence that reference is established in eye-movements around the 400-800ms post noun-onset mark \citep{Eberhard1995}, and covering the duration of the longest critical referent (776ms). 
-Models were estimated using empirical logit regression \citep{Barr2008} with main effects of time (scaled), object (referent/distractor), delivery (fluent/disfluent) and speaker distraction (absent/present), and interactions between them all, along with by-subject and by-item random intercepts and random slopes for time. \\
+Models were estimated using empirical logit regression \citep{Barr2008}, taking the empirical logit transform of fixations/movements to the referent minus the empirical logit transform of fixations/movements to the distractor.
+This allowed us to model the fixation/movement bias towards either object over the other. 
+Models included fixed effects of time (scaled), delivery (fluent/disfluent) and speaker distraction (absent/present), and interactions between them all. 
+Random intercepts and random slopes for time, delivery and distraction were included for both subjects and items. \\
 
 \subsection{Final object-click.}
 Responses show the same overall tendency to interpret an utterance as truthful as was found in \citet{Loy2016}, with 57\% of trials resulting in a click on the referent and only 43\% on the distractor. 
