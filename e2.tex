@@ -195,7 +195,6 @@ Participants were told that the recordings were made by a participant of a previ
 To corroborate this, during the initial explanation of the experiment, participants were shown three videos claimed to be examples of the speaker producing the utterances. 
 These were presented alongside the images about which the speaker spoke (see Figure \ref{fig:vid}). 
 Speaker utterances were depicted in the first video as honest \& fluent, dishonest \& disfluent in the second, and, in the third, honest \& disfluent but distracted (speaker glances sideways toward a car following the car-horn sound effect).\\
-%need more detail. - screen shot of video?
 
 \begin{figure}[Ht]
   \centering
@@ -288,36 +287,38 @@ Distractor & &  62\% &  62\% &  23\% &  24\% \\
 The time-course (referent onset to 2000ms post-onset) of fixations to referent and distractor can be seen for the fluent conditions (Fig. \ref{fig:flueye}) and the disfluent conditions (Fig. \ref{fig:diseye}). 
 \thenote{Move these two figures up so they come before the mousetracking figures (currently figs. 2 \& 3)}
 Visualisation of the time-course of fixations show that for fluent utterances, participants displayed an early fixation bias towards the referent, which began to present itself prior to mean critical noun offset. 
-For disfluent utterances, the picture is more complex---whilst a fixation bias towards the distractor was present, it appeared later on in the trial, not during the utterance of the critical noun as it did in \citet{Loy2016}. 
-Although the same is true of utterances in which there was an available cause of speaker-disfluency, in these cases, participants appeared to fixate more to the referent first, before the later bias towards the distractor.\\
+For disfluent utterances, the picture is more complex---whilst a fixation bias towards the distractor over the referent was present, this only appeared later on in the trial.
+When an alternative, local-cause of disfluency (the car-horn) was present prior to a disfluency, participants showed a tendency to initially fixate towards the referent, before the later bias towards the distractor. 
+This initial fixation bias to the referent was not apparent when the car-horn was absent.\\
 
 \begin{figure}[Ht]
   \centering
 	\includegraphics[scale=.5]{fluent.png}
-  \caption{Mean proportion of fixations to either object (referent and distractor) for fluent utterances split by presence of speaker distraction, calculated out of the total sum of fixations for each 20ms time bin from referent-onset to 2000ms post-onset. Shaded areas represent $\pm 1$ standard error of the mean. Time bins in which a bias towards either the referent or distractor was evident are highlighted with respect to condition and direction of bias (assessed by a mixed effect model estimating the empirical logit of fixations to either object in a given condition, with main effect of object and by-subject and by-item random intercepts and random slopes of object.}
+  \caption{Mean proportion of fixations to either object (referent and distractor) for fluent utterances split by presence of speaker distraction, calculated out of the total sum of fixations for each 20ms time bin from referent-onset to 2000ms post-onset. Shaded areas represent $\pm 1$ standard error of the mean. Time bins in which a bias towards either the referent or distractor was evident are highlighted with respect to condition and direction of bias (assessed by a mixed effect model estimating the empirical logit of fixations to the referent minus the empirical logit of fixations to the distractor, with by-subject and by-item random intercepts).}
   \label{fig:flueye}
 \end{figure}
 
 \begin{figure}[Ht] % might need to change placement
   \centering
 	\includegraphics[scale=.5]{disfluent.png}
-  \caption{Mean proportion of fixations to either object (referent and distractor) for disfluent utterances split by presence of speaker distraction, calculated out of the total sum of fixations for each 20ms time bin from referent-onset to 2000ms post-onset. Shaded areas represent $\pm 1$ standard error of the mean. Time bins in which a bias towards either the referent or distractor was evident are highlighted with respect to condition and direction of bias (assessed by a mixed effect model estimating the empirical logit of fixations to either object in a given condition, with main effect of object and by-subject and by-item random intercepts and random slopes of object.}
+  \caption{Mean proportion of fixations to either object (referent and distractor) for disfluent utterances split by presence of speaker distraction, calculated out of the total sum of fixations for each 20ms time bin from referent-onset to 2000ms post-onset. Shaded areas represent $\pm 1$ standard error of the mean. Time bins in which a bias towards either the referent or distractor was evident are highlighted with respect to condition and direction of bias (assessed by a mixed effect model estimating the empirical logit of fixations to the referent minus the empirical logit of fixations to the distractor, with by-subject and by-item random intercepts).}
   \label{fig:diseye}
 \end{figure}
 
 
 Model analysis of the window from referent-onset to 800ms post-onset confirmed what is evident from visualising the time-course of fixations. 
-When presented with a fluent utterance, participants' fixations to the distractor decreased over time in favour of the referent ($\beta = -0.63, SE = 0.03, t=-18.51.$). 
-In contrast, fixations to the distractor over the referent increased over time when the delivery was disfluent ($\beta = 0.59, SE = 0.05, t=12.24.$). 
-When a plausible cause of speaker distraction was present, participants' fixation biases towards the distractor during disfluent utterances were reduced ($\beta = -0.20, SE = 0.07, t=-2.9.$). 
-The presence of the speaker-distraction was not found to have an effect on the tendency to fixate on the referent for fluent utterances ($t=-0.9.$).\\
+When presented with a fluent utterance, participants' fixations toward the referent over the distractor increased over time ($\beta = 0.64, SE = 0.12, t=5.44.$). 
+In contrast, this fixation bias was reduced when the delivery was disfluent ($\beta = -0.60, SE = 0.06, t=-10.62.$). 
+For disfluent utterances, when the car-horn was present prior to disfluency (providing an alternative explanation of the disfluency), participants' fixations towards the referent over time increased in contrast to when the car-horn was absent ($\beta = 0.18, SE = 0.08, t=2.20.$). 
+The presence of the car-horn was not found to have an effect on the tendency to fixate on the referent for fluent utterances ($t=-0.7.$).\\
 
 \subsection{Mouse-movements.}
 The proportion of mouse movements (distance traveled) towards either object was computed for each 20ms bin from referent onset to 2000ms post-onset. 
 Figures \ref{fig:mflu} and \ref{fig:mdis} and show the proportion of mouse movements towards either object in fluent and disfluent conditions respectively. 
 Model analysis of the window from referent-onset to 800ms post-onset patterned with the eye-tracking data. 
-When presented with a fluent utterance, participants' movements to the distractor decreased over time in favour of the referent ($\beta = -0.46, SE = 0.02, t=-19.49.$), whereas movements to the distractor over the referent increased over time when the delivery was disfluent ($\beta = 0.60, SE = 0.03, t=17.72.$). 
-When a plausible cause of speaker distraction was present, participants bias towards moving to the distractor during disfluent utterances was reduced ($\beta = -0.35, SE = 0.05, t=-7.25.$).\\
+When presented with a fluent utterance, participants' movements to the referent over the distractor increased over time ($\beta = 0.49, SE = 0.07, t=7.36.$). 
+This movement bias towards the referent over the distractor decreased when the delivery was disfluent ($\beta = -0.64, SE = 0.04, t=-16.71.$). 
+When the car-horn was present prior to a disfluency, participants' tendency to move towards the referent over the distractor increased in comparison to a disfluency not preceded by the car-horn ($\beta = 0.37, SE = 0.05, t=6.73.$).\\
 
 
 
@@ -343,32 +344,34 @@ When a plausible cause of speaker distraction was present, participants bias tow
 \section{Discussion.}
 
 Evidence of listeners' pragmatic judgments about a speaker's honesty based on manner of delivery emerged at an early stage in utterance processing, with eye- and mouse-tracking data showing biases towards referent and distractor for fluent and disfluent utterances respectively.
-In this respect, the present study successfully replicates the effect found by \citet{Loy2016}, showing the speed with which an utterance's delivery influences the pragmatic inferences listeners make about speaker's honesty. 
+The present study supports the literature on deception recognition with respect to listeners associations of speaker disfluency with lying \citep{Zuckerman1981,depaulo2003cues}, and furthermore successfully replicates the effect found by \citet{Loy2016}, showing the speed with which these  pragmatic judgments are made.
 Additionally, the results here show that this effect is robust against the presentation of speech in a noisy environment, in which there are potential distractions for the listener. 
 %More broadly, it goes some way to strengthening the ecological validity of the visual world paradigm - one could imagine a real world equivalent in terms of the sleight-of-hand 'thimblerig' game, in which spectators are asked to guess which of three containers an object is under, after they have seen it placed under one, and then watched their order be shuffled (stereotypically performed as a confidence trick on the street).
 \\
 
-The interest in this study, however, is in how listeners responded when presented with two competing explanations for the cause of speaker-disfluency. 
-When an alternative explanation for speaker-disfluency was available to listeners, although the association between disfluency and lying persisted in the final interpretation of an utterance (as evidenced by the eventual decision of which object to click), the picture during the initial stages of comprehension is more complex. 
-For disfluent utterances, the increase in eye- and mouse-movements to the distractor for disfluent conditions---indicating the emergent bias towards interpreting the utterance as dishonest---was initially attenuated when a possible cause of speaker-distraction was present. 
-The availability of an alternative cause of the speaker disfluency resulted in a tendency to initially fixate and move toward the referent, only later fixating on and selecting the distractor. \\
 
+The manipulation of an alternative, utterance-local cause of disfluency was used to investigate whether listeners' association between disfluency and lying are heuristically calculated, or whether they involve reasoning about the speaker's production system. 
+Participants showed an increase in eye- and mouse- movements to the distractor when presented with disfluent utterances---indicating the emergent bias towards interpreting the utterance as dishonest. 
+However, in situations when the disfluency could readily be attributed to a different cause (the speaker being distracted by the car-horn), this was preceded by an initial tendency to fixate and move towards the referent, only later fixating on and selecting the distractor. \\
 
-One account of these findings would suggest that participants made early inferences about the contextual causes of disfluencies, which were eventually overridden by a dishonesty bias for disfluent utterances. 
-By this account, listeners appear able to dynamically decide upon the most likely explanation of disfluency, and, as the speech unfolds, make attributions about why a speaker was disfluent. 
-This equates to listeners engaging in a form of speaker-modelling, in which judgments are made about a speaker's perspective and thought-processes. 
-These judgments are then used to constrain the interpretation of the speaker's meaning and intentions.
-The explanation of these results which suggests that listeners' disfluency-deception bias is reduced as a result of inferentially attributing the disfluency to the speaker being distracted by the car-horn, implies that listeners access information about a speaker's perspective (i.e. that they are distracted) during the early stages of reference-comprehension. 
+One account of these results suggests that, upon hearing a disfluency, participants made early inferences about the cause of that disfluency, which were eventually overridden by their disfluency-lying association. 
+On this view, listeners appear able to dynamically decide upon the most likely explanation of disfluency, and, as the speech unfolds, make attributions about why a speaker was disfluent. 
+This explanation suggests that, during the early stages of comprehension, listeners access information about the speaker's perspective, and engage in a form of reasoning about their production system. 
 
 However, it remains possible to explain these results in terms of direct associations of disfluencies and properties of language use. 
-A probabilistic model of associations of disfluency and e.g. deception, discourse-new or unfamiliar objects, would require a sensitivity to proximate environmental interference such that the weight given to other disfluency-associations is reduced. 
-The distinction here is that disfluency effects on comprehension may still be a learned response to general language use, rather than the result of listeners' attributing beliefs and intentions to particular speakers. 
-Such an explanation may, however, still require listeners to make some form of judgment about what contextual information justifies a reduction in a disfluency's influence---would the sensitivity listeners display to contextual information when processing disfluency discern between the car-horn used here, which was situated within the context of the speaker's environment, and the same car horn if it occurred in the street outside the lab and was audible to the listener but external to the experiment? 
+Some heuristic associations between disfluency, in this study, lying, might simply be sensitive to loud noises in the environment.
+The distinction here is that disfluency effects on comprehension could still be an heuristically calculated response, rather than the result of reasoning about the production system of a particular speaker.
+It is unclear, however, how such a view would account for listeners discerning between what constitutes as potentially distracting for a speaker. 
+For instance, would some heuristic which is sensitive to loud noises discern between the car-horn used here, which was situated within the context of the speaker's environment, and the same car-horn if it occurred in the street outside the lab and was audible to the listener but external to the experiment? 
+
+
+
+
 It is hard to see how a judgment about what constitutes plausible speaker-distraction differs from an inference about the cause of a speaker's disfluency.\\
 %Also I'm wondering if this judgement based on learning associatons based on environmental distractions would count as a form of situation-modelling too? If so it might be worth emphasising the difference between the situation-modelling you mention in the paragraph above (which to me is more of a speaker-specific situation-modelling) and this here (more general).
 %I need to think about this a bit more..
 
-The study here found that utterance-local contextual information influenced listeners' moment-to-moment pragmatic inferences about disfluencies. 
+Utterance-local contextual information influenced listeners' moment-to-moment pragmatic inferences about disfluencies. 
 Whilst being eventually overridden by listeners' bias towards interpreting disfluent utterances at dishonest, the availability of an alternative, external cause of speaker-disfluency (being distracted) resulted in an initial attenuation of this bias. 
 Whilst this contextual effect could be explained as a prelearned expectation about disfluency frequently occurring after a potentially distracting noise, it is not clear how listeners judge what might count as potentially distracting for a speaker.
 Alternatively, these findings could suggest that participants made early attributions about the potential causes of a disfluency, implying that listeners take into account a speaker's perspective during the initial stages of comprehension. 
