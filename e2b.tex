@@ -5,24 +5,28 @@
 \usepackage{hyperref}
 %\usepackage{stmaryrd} % not needed
 \usepackage{tabularx}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
 \usepackage[normalem]{ulem}
 %\linespread{1.3}
 % use apa defaults
 \hypersetup{hidelinks=true}
 % let's not be garish
+\usepackage{lingex} % some linguistic-style example numbering
+
 
 \newcommand*{\smex}[1]{\textit{#1}} % 'small example'
 \newcommand*{\spex}[1]{``{#1}''} % 'spoken example'
 \newcommand*{\term}[1]{\emph{#1}} % introducing a new term
-\newcommand*{\citegen}[1]{\citeauthor{#1}'s \citeyear{#1}}
+\newcommand*{\citegen}[1]{\citeauthor{#1}'s~(\citeyear{#1})}
 
 
-\title{Contextual effects on online pragmatic inferences.}
+\title{Contextual Effects on Online Pragmatic Inferences of Deception}
 \author{JK; JL; MC}
 \date{\today}
 
 
-\shorttitle{disfluency|distraction}
+\shorttitle{Contextual Effects on Deception}
 \abstract{Where the veracity of a statement is in question, listeners show a bias towards interpreting speaker disfluency as a sign of dishonesty. 
 In deception-recognition research, the proposed mechanism by which the interpretation of what is said is affected by disfluency is via speaker modelling:
 By reverse inference, disfluency is a symptom of cognitive difficulty, and cognitive difficulty is the consequence of inventing a situation (lying).
@@ -129,14 +133,14 @@ However, when listening to the descriptions made by other participants, higher r
 The evidence cited above suggests that, at least for the case of deception, the influence of speaker disfluency is fast, and not always accurate: 
 Listeners appear to rely on a rule-of-thumb association between disfluency and lying.
 However, it is possible that any inaccuracy is actually the result of a more detailed attempt to model the speaker.
-Lying is associated with cognitive effort, and cognitive effort is associated with disfluency, perhaps predicated on not on experience as a listener but on introspection as a speaker:
+Lying is associated with cognitive effort, and cognitive effort is associated with disfluency, perhaps predicated not on experience as a listener but on introspection as a speaker:
 Speakers believe themselves to be more disfluent when lying \citep{Zuckerman1981}, and this belief extends to others' language production.
 Evidence for this conjecture would lie in whether listeners' assessments of speaker veracity were affected by specific circumstances which a heuristic would be unlikely to take into account.
 One such circumstance would be the availability of an alternative cause of a given disfluency, such as the speaker being momentarily distracted.
 If listeners are reasoning about the causes of speakers' disfluencies, and alternative causes of those disfluencies are readily available, then the association between disfluency and lying should be weakened.
 
 
-In the current study, we build  \citegen{Loy2016} treasure hunting game, using an auditory context which provides plausible causes of speaker distraction (and thus disfluency).
+In the current study, we build on \citegen{Loy2016} treasure hunting game, using an auditory context which provides plausible causes of speaker distraction (and thus disfluency).
 Utterances are presented to listeners under the guise of having been recorded outdoors in a busy street, and low-level ambient noise is present behind every utterance.
 In the critical condition, disfluencies are immediately preceded by relatively loud noises (here, car-horns).
 If listeners rely upon a simple heuristic association between disfluency and deception, then the car-horn should not influence the judgments they make about a speaker's honesty.
@@ -146,7 +150,7 @@ Listeners might attribute disfluency to the speaker being momentarily distracted
 
 \section{Experiment}
 
-The present experiment followed a 2 (fluent vs disfluent) x 2 (distraction absent vs present) design.
+The experiment followed a 2~(fluent vs.\@ disfluent) $\times$~2 (distraction absent vs.\@ present) design.
 Subjects participated in a visual world paradigm game, similar to that used by \citet{Loy2016}, in which they guessed the location of some treasure based on utterances made by a potentially deceitful speaker, ostensibly recorded outdoors in a busy street.
 Half of the critical utterances were fluent, and half disfluent; in half of all critical cases, a car-horn was clearly audible immediately prior to the disfluency, or in the equivalent parts of fluent utterances.
 As in \citet{Loy2016}, we measured eye- and mouse- movements, to study the time course of listeners' pragmatic judgments about the honesty of an utterance, as well as their final interpretation of each utterance (object clicked).
@@ -156,37 +160,43 @@ As in \citet{Loy2016}, we measured eye- and mouse- movements, to study the time 
 %\subsubsection{visual}
 Visual stimuli consisting of 120 black and white line drawings, taken from \citet{Snodgrass1980}, were presented to participants in pairs across 60 trials (20 experimental, 40 fillers). 
 Each trial presented the \textit{referent} (the object which the speaker identified as having the treasure behind for that trial), and a \textit{distractor}, which was chosen at random without replacement from a set of 60 objects. 
-To control for the effect of the bias towards interpreting disfluency to difficulty of description \citep{Arnold2007}, critical referents and distractors were matched for familiarity (H value $\ge 3.0$) and ease-of-naming ($<1.0$). 
+To control for the effect of the bias towards interpreting disfluency to difficulty of description \citep{Arnold2007}, critical referents and distractors were matched for familiarity ($H \ge 3.0$)
+%%MC are you sure familiarity is measured usinf H  I would expect that to be true of ease-of-naming (only)
+and ease-of-naming ($<1.0$). 
 Object pairings with the same phonetic onset were avoided. 
 
 %\subsubsection{utterances|audio}
-As in \citet{Loy2016} each referent was associated with a recording of a speaker naming the depicted object as the location of the treasure, and as before, critical utterances were either fluent or disfluent. 
-The present study, however, manipulated not only the manner of delivery, but also the presence of a plausible cause of speaker distraction. 
-Thus audio files were constructed such that the critical referents could be heard in four conditions varying by delivery (fluent vs disfluent) and presence of distraction (absent vs present), see below. 
-The disfluent variants were created by splicing a prolonged article followed by a filled pause (\spex{Thee---uh,}) into the fluent utterances.
-Where \citet{Loy2016} studied both utterance-initial and utterance-medial disfluencies, we opted for an utterance-medial position as it was considered more believable as being caused by speaker distraction when paired with a environmental cue.
-Meanwhile, to create a plausible cause of speaker-distraction, a 520ms car-horn sound effect was presented prior to the onset of the referent noun (-1100ms for disfluent utterances, -600ms for fluent). 
-To situate the car-horn sound effect in a context, each referent was paired with a unique clip of ambient traffic and street noise, over which the recordings in their vario were presented.
-Thus the presentation of each critical referent varied only by 1) fluency and 2) presence of car-horn, to ensure that participants' behaviour was a reaction to the different combinations of these elements. 
-All recordings, ambient noise and sound-effects were normalised and resampled to create 48 KHz stereo .wav files.
+% As in \citet{Loy2016}, each referent was associated with a recording of a speaker naming the depicted object as the location of the treasure, and as before, critical utterances were either fluent or disfluent. 
+% The present study, however, manipulated not only the manner of delivery, but also the presence of a plausible cause of speaker distraction. 
+Audio files were constructed such that the critical referents could be heard in four conditions varying by delivery (fluent vs.\@ disfluent) and presence of distraction (absent vs.\@ present). 
+The disfluent variants were created by splicing a prolonged article followed by a filled pause (\spex{Thee---uh,}) into the fluent utterances, directly before the mention of the referent.
+This corresponds to the utterance-medial position used by \citet{Loy2016}:
+We considered it to be more believable that such a disfluency would be caused by an environmental distraction.
+Each referent was paired with a unique clip of ambient traffic and street noise, over which the recordings in their four variants were presented.
+To create a plausible cause of speaker distraction, a 520ms car-horn sound effect was presented prior to the onset of the referent noun (1100~ms before noun onset for disfluent utterances, 600~ms for fluent utterances). 
+All recordings, ambient noise and sound-effects were normalised and resampled to create 48~KHz, 16-bit, stereo Wav files.
+A sample set of materials is schematically represented in (\ref{sec:materials}).
 
-
-\begin{enumerate}
+\begin{examples}\label{sec:materials}
 \item \textbf{fluent, distraction absent:} The treasure is behind the \textless referent\textgreater .
 \item \textbf{disfluent, distraction absent:} The treasure is behind thee, uh ... \textless referent\textgreater .
 \item \textbf{fluent, distraction present:} The treasure is $\underbracket{\text{behind the}}_\text{horn}$ \textless referent\textgreater .
 \item \textbf{disfluent, distraction present:} The treasure is $\underbracket{\text{behind thee}}_\text{horn}$, uh ...\textless referent\textgreater .
-\end{enumerate}
+\end{examples}
 
 
 %\subsubsection{lists}
-The 20 critical referents were counterbalanced across four lists, each with 10 fluent and 10 disfluent utterances, and each containing 10 instances of the car-horn (5 of which were disfluent). 
-Lists also contained 40 filler utterances, half of which were fluent, and half of which contained either a form of disfluency or a discourse manipulation (see Table \ref{table:fillers}). 
-Additionally, 20 of these filler items (10 fluent, 10 disfluent or discourse manipulation) contained various novel noises which could be interpreted as distracting for a speaker (see Table \ref{table:fillernoise}). 
+The twenty critical referents were counterbalanced across four lists, each with 10~fluent and 10~disfluent utterances, and each containing 10~instances of the car-horn (5 of which preceded disfluencies). 
+Lists also contained 40~filler utterances, half of which were fluent, and half of which contained either a form of disfluency or a discourse manipulation (see Table \ref{table:fillers}).
+Additionally, 20~of these filler items (10~fluent, 10~disfluent or discourse manipulation) contained various novel noises which could be interpreted as distracting for a speaker (see Table \ref{table:fillernoise}). 
 These filler distractions varied in position relative to the referent noun onset.
 
+% captions go ABOVE tables (but below figures)
+% see preamble for column type Y (and see APA for removal of vertical lines)
 \begin{table}
-\begin{tabularx}{\linewidth}{|X|X|X|X|}
+\caption{Disfluencies and discourse manipulations in filler items.}
+\label{table:fillers}
+\begin{tabularx}{\linewidth}{YYYY}
   \hline
 Filler type & Manipulation & No. of Utterances & Example \\
   \hline
@@ -199,12 +209,12 @@ Other & Discourse marker & 5 & \textit{Okay,} the treasure is behind the \textle
 & Combination & 2 & \textit{Right,} the treasure \textit{might be} behind the \textless referent\textgreater .\\
    \hline
 \end{tabularx}
-\caption{Disfluencies and discourse manipulations in filler items.}
-\label{table:fillers}
 \end{table}
 
 \begin{table}
-\begin{tabularx}{\linewidth}{|X|X|}
+\caption{Plausible causes of speaker distraction in filler items.}
+\label{table:fillernoise}
+\begin{tabularx}{\linewidth}{YY}
 \hline
 Noise & No. of Utterances\\
 \hline
@@ -220,23 +230,21 @@ Man shouting & 1 \\
 Dog barking & 1 \\
 \hline
 \end{tabularx}
-\caption{Plausible causes of speaker distraction in filler items.}
-\label{table:fillernoise}
 \end{table}
 
-
 \subsection{Cover story}
-Central to the idea of a distraction-caused-disfluency is the requirement that participants believe that the utterances were produced naturally and in a noisy environment. 
+Central to the design of the present experiment was the requirement that participants believe that the utterances were produced naturally and in a noisy environment. 
 Participants were told that the recordings were made by a participant of a previous experiment which was conducted on the side of a busy street. 
-To corroborate this, during the initial explanation of the experiment, participants were shown three videos claimed to be examples of the speaker producing the utterances. 
-These were presented alongside the images about which the speaker spoke (see Figure \ref{fig:vid}). 
-Speaker utterances were depicted in the first video as honest \& fluent, dishonest \& disfluent in the second, and, in the third, honest \& disfluent but distracted (speaker glances sideways toward a car following the car-horn sound effect).
-
+To corroborate this, during the initial explanation of the experiment, participants were shown three videos which purported to be examples of the speaker producing the utterances. 
+These were presented alongside the images which the speaker spoke about (see Figure \ref{fig:vid}). 
+Participants could thus infer whether the speaker was telling the truth about the treasure's location in each video.
+The speaker in the first video as honest and fluent; in the second she was dishonest and disfluent; and in the third, honest and disfluent but distracted (the speaker glanced sideways towards a car following a car-horn sound effect which occurred immediately prior to her disfluency).
+%%%MC why the sudden ampersands?  (edited out now, obviously.  This paragraph read like it had been written in note form.  Please check the new version)
 
 \begin{figure}[Ht]
   \centering
 	\includegraphics[scale=.2]{convincer.png}
-  \caption{Screenshot of video presented to participants as an example of speaker producing utterances in a noisy environment. Screenshot shows an example of speaker producing a disfluent and dishonest utterance.}
+  \caption{Screenshot of video presented to participants as an example of speaker producing utterances in a noisy environment. The screenshot shows an example of speaker producing a disfluent and dishonest utterance.}
   \label{fig:vid}
 \end{figure}
 
@@ -246,7 +254,7 @@ This was double-checked by verbal questioning after participants were debriefed 
 
 
 \subsection{Procedure}
-Stimuli were displayed on a 21'' CRT monitor, placed 850mm from an Eyelink 1000 Tower-mounted eye-tracker which tracked eye-movements at 500Hz (right-eye only). 
+Stimuli were displayed on a 21~in.\@ CRT monitor, placed 850mm from an Eyelink 1000 Tower-mounted eye-tracker which tracked eye-movements at 500Hz (right-eye only). 
 Audio was presented in stereo from speakers either side of the monitor. 
 Mouse coordinates were sampled at 50Hz. 
 The experiment was presented using OpenSesame version 3.0 \citep{Mathot2012}.
