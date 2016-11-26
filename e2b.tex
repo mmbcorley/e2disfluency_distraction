@@ -19,7 +19,7 @@
 \newcommand*{\spex}[1]{``{#1}''} % 'spoken example'
 \newcommand*{\term}[1]{\emph{#1}} % introducing a new term
 \newcommand*{\citegen}[1]{\citeauthor{#1}'s~(\citeyear{#1})}
-
+\newcommand*{\SE}{\mathit{SE}} % fix funny "SE" spacing
 
 \title{Contextual Effects on Online Pragmatic Inferences of Deception}
 \author{JK; JL; MC}
@@ -298,35 +298,40 @@ One further participant was excluded because they had previously taken part in s
 \subsection{Analysis}
 Analysis was carried out in R version 3.3.0 \citep{rbase}, using the lme4 package \citep{lme4}. 
 Trials in which participants did not click on either the referent or distractor (0.01\%) were excluded from all analyses. 
-Object-clicked (referent or distractor) was modelled using mixed effect logistic regression, testing for main effects of manner of delivery, presence of plausible speaker distraction, and their interaction as fixed effects, and including random slopes for these same variables, plus random intercepts and slopes by both subject and referent.
 
+%MC much reworded: please check
+Analyses for both eye and mouse movements were conducted over a time window of 800~ms from the onset of the referent name, matching the analyses in \citet{Loy2016}.
+This window exceeds the duration of the longest critical referent name (776~ms) and is consistent with evidence that eye movements reflect the establishment of reference around 400-800~ms after noun onset \citep{Eberhard1995}.
+Eye fixation data was averaged into 20~ms bins (of 10 samples) prior to analysis.
+For each bin, we calculated the proportions of time spent fixating referent or the distractor, resulting in a measure of the proportions of fixations on either object over time.
+The position of the mouse was sampled every 20~ms, corresponding to one bin of eye~tracking data.
+Using the $X$ coordinates only, we calculated the number of screen pixels moved and the direction of movement (towards referent or distractor).
+The cumulative distance travelled towards each object was calculated for each bin, and divided by the total distance moved, regardless of direction.
+The resulting measure was the proportion of total distance travelled towards either object over time.
+Trials for which the total mouse distance travelled post referent-onset was less than one third of the distance from the screen centre to the near edge of an object were excluded (0.03\% of trials). 
+%%%MC movements beyond edge:  any idea how many samples were rejected on this basis?
+Movements beyond the outer edge of either object were considered to be `overshooting' and were not included in calculations.
 
-Eye-tracking fixation data was averaged into 20ms bins (of 10 samples) prior to analysis, and coded in terms of the area of interest (AOI), which were referent; distractor and neither image. 
-The proportion of fixations to either object from the total sum of fixations was computed for each time bin. 
-Mouse-tracking analysis only looked at the $X$-coordinates of the cursor.
-Distance traveled by the cursor (pixels) was computed for each 20ms bin, coded for direction relative to either object. 
-The cumulative mouse distance traveled toward either object in each trial was calculated by summing the distance travelled up to each time bin, and proportion of movement was calculated by taking the distance travelled toward an object, divided by the total distance travelled in that trial in either direction. 
-Trials for which the total mouse distance travelled post referent-onset was less than 1/3 of the distance from the screen centre to the near edge of an object were excluded (0.03\% of trials), on the basis that it was indicative of participants' having decided prior to referent-onset upon which object to click. 
-Movements beyond the outer edge of either object were excluded on the basis that it indicated `overshooting' with the cursor.
+We used an empirical logit transform to measure relative biases in eye and mouse movements \citep{Barr2008}.
+Eye movement biases were calculated from the proportions of referent to distractor fixations;
+mouse movement biases were calculated analagously.
+A value of zero in either measure indicates no bias towards either object, and positive and negative values indicate a bias towards the referent and distractor respectively.
+Linear mixed effects models of eye and mouse movements included fixed effects of time ($Z$-scored), delivery (fluent or disfluent) and speaker distraction (absent or present), and all interactions.
+Random intercepts and slopes for time, delivery and distraction were included by subject and by referent.
+Following \citet{baayen2008analyzing}, we considered effects in these models to be significant where $|t|>2$.
 
+The object clicked (referent or distractor) was modelled using mixed effects logistic regression.
+This model included  fixed effects delivery (fluent or disfluent) and speaker distraction (absent or present), and all interactions, with random intercepts and slopes for delivery and distraction by subject and by referent.
 
-Analyses for both eye- and mouse-movements were conducted over a time window from referent onset to 800ms post-onset. 
-This window matches that of \citet{Loy2016}, based on evidence that reference is established in eye-movements around the 400-800ms post noun-onset mark \citep{Eberhard1995}, and covering the duration of the longest critical referent (776ms). 
-Models of eye-movements used the empirical logit transform of fixations to the referent minus the empirical logit transform of fixations to the distractor \citep{Barr2008}.
-Mouse-movements were modelled analogously. 
-This allowed us to model the eye- and mouse-movement bias towards either object over the other: A value of zero indicated no bias towards either object, and positive and negative values indicated a bias towards the referent and distractor respectively. 
-Models included fixed effects of time (Z-scored), delivery (fluent or disfluent) and speaker distraction (absent or present), and all interactions. 
-Random intercepts and random slopes for time, delivery and distraction were included for both subjects and items.
-
-
-\subsection{Final object-click}
+\subsection{Final object click}
 Responses show the same overall tendency to interpret an utterance as truthful as was found in \citet{Loy2016}, with 57\% of trials resulting in a click on the referent and only 43\% on the distractor. 
 Table \ref{table:objctclck} shows the percentage of mouse-clicks on each object by condition.
-A logit regression model of object-clicks showed that participants were less likely to click on the referent following a disfluent utterance than a fluent one ($\beta = -2.24,SE = 0.67,p<.001.$). 
+A logit regression model of object clicks showed that participants were less likely to click on the referent following a disfluent utterance than a fluent one ($\beta = -2.24$; $\SE = 0.67$; $p<.001$). 
+%MC note "proper" way to typeset stats (includes real spaces etc.)
 This is in keeping with the literature \citep{Brennan1995, Swerts2005} and with the results of \citet{Loy2016}: Manner of delivery influences participants' global interpretations of the speaker's truthfulness. 
 The presence of a plausible speaker distraction was not found to affect responses; neither was the interaction between delivery and distraction. 
 The bias toward interpreting disfluency as a sign of dishonesty appeared to be explicit for 19 out 24 participants, as indicated in the post-test questionnaire. 
-Table \ref{table:objctclck} shows the percentage of mouse-clicks on each object by condition.
+Table \ref{table:objctclck} shows the percentage of mouse clicks on each object by condition.
 
 
 \begin{table}[ht]
@@ -344,7 +349,7 @@ Distractor & &  62\% &  62\% &  23\% &  24\% \\
 \label{table:objctclck}
 \end{table}
 
-\subsection{Eye-movements}
+\subsection{Eye movements}
 The time-course (referent onset to 2000ms post-onset) of fixations to referent and distractor can be seen for the fluent conditions (Fig. \ref{fig:flueye}) and the disfluent conditions (Fig. \ref{fig:diseye}). 
 Visualisation of the time-course of fixations show that for fluent utterances, participants displayed an early fixation bias towards the referent, which began to present itself prior to mean critical noun offset. 
 For disfluent utterances, the picture is more complex---whilst a fixation bias towards the distractor over the referent was present, this only appeared later on in the trial.
@@ -369,19 +374,19 @@ This initial fixation bias to the referent was not apparent when the car-horn wa
 
 
 Analysis of the window from referent-onset to 800ms post-onset confirmed what is evident from visualising the time-course of fixations. 
-When presented with a fluent utterance, participants' fixations toward the referent over the distractor increased over time ($\beta = 0.64, SE = 0.12, t=5.44.$). 
-In contrast, this fixation bias was reduced when the delivery was disfluent ($\beta = -0.60, SE = 0.06, t=-10.62.$). 
-For disfluent utterances, when the car-horn was present prior to disfluency (providing an alternative explanation of the disfluency), participants' fixations towards the referent over time increased in contrast to when the car-horn was absent ($\beta = 0.18, SE = 0.08, t=2.20.$). 
-The presence of the car-horn was not found to have an effect on the tendency to fixate on the referent for fluent utterances ($t=-0.7.$).
+When presented with a fluent utterance, participants' fixations toward the referent over the distractor increased over time ($\beta = 0.64$; $\SE = 0.12$; $t=5.44$). 
+In contrast, this fixation bias was reduced when the delivery was disfluent ($\beta = -0.60$; $\SE = 0.06$; $t=-10.62$). 
+For disfluent utterances, when the car-horn was present prior to disfluency (providing an alternative explanation of the disfluency), participants' fixations towards the referent over time increased in contrast to when the car-horn was absent ($\beta = 0.18$; $\SE = 0.08$; $t=2.20$). 
+The presence of the car-horn was not found to have an effect on the tendency to fixate on the referent for fluent utterances ($t=-0.7$).
 
 
-\subsection{Mouse-movements}
+\subsection{Mouse movements}
 The proportion of mouse-movements (distance traveled) towards either object was computed for each 20ms bin from referent onset to 2000ms post-onset. 
 Figures \ref{fig:mflu} and \ref{fig:mdis} and show the proportion of mouse-movements towards either object in fluent and disfluent conditions respectively. 
 Analysis of the window from referent-onset to 800ms post-onset patterned with the eye-tracking data. 
-When presented with a fluent utterance, participants' movements to the referent over the distractor increased over time ($\beta = 0.49, SE = 0.07, t=7.36.$). 
-This movement bias towards the referent over the distractor decreased when the delivery was disfluent ($\beta = -0.64, SE = 0.04, t=-16.71.$). 
-When the car-horn was present prior to a disfluency, participants' tendency to move towards the referent over the distractor increased in comparison to a disfluency not preceded by the car-horn ($\beta = 0.37, SE = 0.05, t=6.73.$).
+When presented with a fluent utterance, participants' movements to the referent over the distractor increased over time ($\beta = 0.49$; $\SE = 0.07$; $t=7.36$). 
+This movement bias towards the referent over the distractor decreased when the delivery was disfluent ($\beta = -0.64$; $\SE = 0.04$; $t=-16.71$). 
+When the car-horn was present prior to a disfluency, participants' tendency to move towards the referent over the distractor increased in comparison to a disfluency not preceded by the car-horn ($\beta = 0.37$; $\SE = 0.05$; $t=6.73$).
 
 
 \begin{figure}[Ht]
