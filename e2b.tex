@@ -173,7 +173,7 @@ The disfluent variants were created by splicing a prolonged article followed by 
 This corresponds to the utterance-medial position used by \citet{Loy2016}:
 We considered it to be more believable that such a disfluency would be caused by an environmental distraction.
 Each referent was paired with a unique clip of ambient traffic and street noise, over which the recordings in their four variants were presented.
-To create a plausible cause of speaker distraction, a 520ms car-horn sound effect was presented prior to the onset of the referent noun (1100~ms before noun onset for disfluent utterances, 600~ms for fluent utterances). 
+To create a plausible cause of speaker distraction, a 520~ms car-horn sound effect was presented prior to the onset of the referent noun (1100~ms before noun onset for disfluent utterances, 600~ms for fluent utterances). 
 All recordings, ambient noise and sound-effects were normalised and resampled to create 48~KHz, 16-bit, stereo Wav files.
 A sample set of materials is schematically represented in (\ref{sec:materials}).
 
@@ -249,45 +249,51 @@ The speaker in the first video was honest and fluent; in the second she was dish
 \end{figure}
 
 
-To ensure that analysis could be run only on data from participants for whom the cover story held, a post-test questionnaire assessed whether participants thought it believable that the utterances were produced naturally and in the suggested context. 
-This was double-checked by verbal questioning after participants were debriefed about the true nature of the experiment, by asking whether it occurred to them during the experiment that the recordings might not have been produced outside in the street.
+To ensure that analysis could be run only on data from participants for whom the cover story held, a post-test questionnaire assessed whether participants believed that the utterances were produced outdoors, as claimed.
+Once they had been debriefed about the true nature of the experiment, participants were asked again whether it had occurred to them during the experiment that the recordings might not have been produced outside in the street.
 
-
+%%MC pretty much totally rewritten to make it all a bit more direct.  Please check.
 \subsection{Procedure}
-Stimuli were displayed on a 21~in.\@ CRT monitor, placed 850mm from an Eyelink 1000 Tower-mounted eye-tracker which tracked eye-movements at 500Hz (right-eye only). 
-Audio was presented in stereo from speakers either side of the monitor. 
-Mouse coordinates were sampled at 50Hz. 
-The experiment was presented using OpenSesame version 3.0 \citep{Mathot2012}.
+Stimuli were displayed on a 21~in.\@ CRT monitor, placed 850~mm from an Eyelink~1000 Tower-mounted eye-tracker which tracked eye-movements at 500~Hz (right eye only). 
+Audio was presented in stereo from speakers on either side of the monitor. 
+Mouse coordinates were sampled at 50~Hz. 
+The experiment was presented using OpenSesame version~3.0 \citep{Mathot2012}.
 
 
 %\subsubsection{trial structure}
-Participants were told they would see two objects and hear a speaker identify one of them as hiding the treasure. 
-They were told that the objective of the game was to accrue treasure by successfully locating the treasure, the location of which the speaker would lie half the time about. Participants' instructions were to click on the object which \textit{they believed} the treasure to be behind. 
+Participants were told they would see a series of pairs of objects, and that treasure was concealed behind one of the objects in each pair.
+For each trial, they would hear a speaker indicating the location of the treasure; but the speaker would be lying half of the time.
+Their task was to click on the object which they believed the treasure was behind, and thus accrue treasure over the course of the experiment.
+
 Once participants had read the instructions, the eye-tracker was calibrated.
-Calibration was monitored throughout, with the experiment being paused for recalibration if the experimenter deemed it necessary.
-To maintain accuracy, between each trial participants underwent a drift correction using a central fixation point, which changed from grey to red (for 500ms) upon successful fixation, signifying the start of the subsequent trial. 
-Each trial began with the presentation of the two images (referent and distractor) in positions vertically central and horizontally to the left and right of centre (referents were presented equally often on each side). 
-Simultaneous with presentation of the visual display was the onset of the ambient traffic audio file. 
-After 1500ms, the mouse pointer appeared centrally, and the playback of the utterance began. 
-Upon clicking an object, the stimuli disappeared and were replaced by the grey fixation dot, signifying progression to the subsequent trial. 
-Each trial had an automatic time-out of 5000ms from utterance onset, in case participants did not click on an object.
+Recalibration occurred between trials where necessary.
+Each trial began with a drift correction using a central fixation point, which changed from grey to red (for 500~ms) upon successful fixation. 
+Following the red fixation point, two images (referent and distractor) were presented, horizontally to the left and right of the midpoint of the screen, and the ambient traffic audio began.
+Referents were presented equally often on each side.
+1500~ms after the stimuli had appeared, a mouse pointer at the centre of the screen, and the playback of the utterance began.
+Participants used the mouse to click on one of the two objects.
+Once this had happened, the stimuli disappeared and were replaced by a grey fixation dot, signifying the beginning of the next trial. 
+Trials timed out after 5000~ms from utterance onset.
 
 
 %\subsubsection{bonus rounds}
 To maintain motivation throughout the study, participants were told that there were a number of ``hidden bonus rounds'' which offered more treasure. 
-Of the filler trials, 25\% did not immediately progress to the subsequent trial, instead giving a positive feedback message (regardless of which object was clicked) stating successful completion of a bonus round. 
-Furthermore, participants were told that top scorers of the game would be able to enter their name on a highscore table, which was shown at the beginning of the experiment. 
+Following 25\% of the filler trials, a ``bonus round'' message appeared before progressing to the next trial.
+This informed participants that they had successfully located bonus treasure (regardless of the object chosen).
+Participants were also told that the top scorers would be able to enter their names on a highscore table, which was shown at the beginning of the experiment. 
+
 Participants completed five practice trials (one of which was presented as a bonus round) prior to the main experiment. 
-Eye-movements, mouse co-ordinates and object-clicked (referent or distractor) were recorded for each experimental trial.
+Eye movements, mouse coordinates and object clicked (referent or distractor) were recorded for each experimental trial.
 
 
 \section{Results}
 \subsection{Exclusion criteria}
-For a final sample of 24, we were required to run the experient with 37 participants, recruited from the University of Edinburgh community, who participated in return for £4 remuneration. 
-The data from 12 participants was excluded on the basis that they indicated either in the questionnaire (ten) or verbally (two) that they did not believe the cover story. 
-Additionally, the study reported that one participant for whom the deception held had previously participated in \citet{Loy2016}, and thus they were also excluded. 
-Analysis was run on the data from the remaining 24 participants.
+Thirty-seven participants took part in the experiment, for a planned design size of~24.
+Participants were recruited from the University of Edinburgh community, and participated in return for a payment of \pounds{}4.
+Twelve participants were excluded on the basis that they indicated either in the questionnaire~(10) or verbally~(2) that they did not believe the cover story.
+One further participant was excluded because they had previously taken part in similar study.
 
+%%%MC got this far
 
 \subsection{Analysis}
 Analysis was carried out in R version 3.3.0 \citep{rbase}, using the lme4 package \citep{lme4}. 
