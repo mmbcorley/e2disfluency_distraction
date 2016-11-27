@@ -321,17 +321,18 @@ Random intercepts and slopes for time, delivery and distraction were included by
 Following \citet{baayen2008analyzing}, we considered effects in these models to be significant where $|t|>2$.
 
 The object clicked (referent or distractor) was modelled using mixed effects logistic regression.
-This model included  fixed effects delivery (fluent or disfluent) and speaker distraction (absent or present), and all interactions, with random intercepts and slopes for delivery and distraction by subject and by referent.
+This model included  fixed effects of delivery (fluent or disfluent) and speaker distraction (absent or present), and all interactions, with random intercepts and slopes for delivery and distraction by subject and by referent.
 
-\subsection{Final object click}
-Responses show the same overall tendency to interpret an utterance as truthful as was found in \citet{Loy2016}, with 57\% of trials resulting in a click on the referent and only 43\% on the distractor. 
+\subsection{Object click}
+Responses show the same overall tendency to interpret an utterance as truthful as was found by \citet{Loy2016}, with 57\% of trials resulting in a click on the referent and only 43\% on the distractor.
 Table \ref{table:objctclck} shows the percentage of mouse-clicks on each object by condition.
-A logit regression model of object clicks showed that participants were less likely to click on the referent following a disfluent utterance than a fluent one ($\beta = -2.24$; $\SE = 0.67$; $p<.001$). 
+Analyses showed that participants were less likely to click on the referent following a disfluent utterance than a fluent one ($\beta = -2.24$; $\SE = 0.67$; $p<.001$). 
 %MC note "proper" way to typeset stats (includes real spaces etc.)
-This is in keeping with the literature \citep{Brennan1995, Swerts2005} and with the results of \citet{Loy2016}: Manner of delivery influences participants' global interpretations of the speaker's truthfulness. 
+This is in keeping with the literature \citep{depaulo2003cues,Zuckerman1981}:
+Manner of delivery influences participants' global interpretations of the speaker's truthfulness. 
 The presence of a plausible speaker distraction was not found to affect responses; neither was the interaction between delivery and distraction. 
-The bias toward interpreting disfluency as a sign of dishonesty appeared to be explicit for 19 out 24 participants, as indicated in the post-test questionnaire. 
-Table \ref{table:objctclck} shows the percentage of mouse clicks on each object by condition.
+The bias toward interpreting disfluency as a sign of dishonesty appeared to be explicit for 19~out of~24 participants, as indicated in the post-test questionnaire. 
+
 
 
 \begin{table}[ht]
@@ -349,13 +350,16 @@ Distractor & &  62\% &  62\% &  23\% &  24\% \\
 \label{table:objctclck}
 \end{table}
 
-\subsection{Eye movements}
-The time-course (referent onset to 2000ms post-onset) of fixations to referent and distractor can be seen for the fluent conditions (Fig. \ref{fig:flueye}) and the disfluent conditions (Fig. \ref{fig:diseye}). 
-Visualisation of the time-course of fixations show that for fluent utterances, participants displayed an early fixation bias towards the referent, which began to present itself prior to mean critical noun offset. 
-For disfluent utterances, the picture is more complex---whilst a fixation bias towards the distractor over the referent was present, this only appeared later on in the trial.
-When an alternative, local cause of disfluency (the car-horn) was present prior to a disfluency, participants showed a tendency to initially fixate towards the referent, before the later bias towards the distractor. 
-This initial fixation bias to the referent was not apparent when the car-horn was absent.
+%%%MC general things: (1) in the eye movement graphs, the keys are in a very weird order...? Why describe the effects markers halfway through the list of conditions? Why is there a solid circle for |t|>2 that never appears? (2) in the mouse graphs, there are no equivalent effects markers...?
 
+\subsection{Eye movements}
+Figures \ref{fig:flueye} and \ref{fig:diseye} show the time-courses of fixations to referents and distractors over 2000~ms from referent onset, for fluent and disfluent conditions respectively.
+Analyses were conducted over a time window from referent onset to 800~ms post onset.
+For fluent utterances, participants displayed an early fixation bias towards the referent, which increased over time ($\beta = 0.64$; $\SE = 0.12$; $t=5.44$). 
+For disfluent utterances, the fixation bias towards the referent was reduced ($\beta = -0.60$; $\SE = 0.06$; $t=-10.62$), such that a preference for the distractor over the referent emerged little later on in the trial.
+When an alternative, local cause of disfluency (the car-horn) was present prior to a disfluency, participants were more likely to bias fixations to the referent over time ($\beta = 0.18$; $\SE = 0.08$; $t=2.20$).
+The presence of the car-horn was not found to have an effect on the tendency to fixate on the referent for fluent utterances ($t=-0.7$).
+%%MC cite t to 2dp please, for consistency
 
 \begin{figure}[Ht]
   \centering
@@ -372,21 +376,13 @@ This initial fixation bias to the referent was not apparent when the car-horn wa
   \label{fig:diseye}
 \end{figure}
 
-
-Analysis of the window from referent-onset to 800ms post-onset confirmed what is evident from visualising the time-course of fixations. 
-When presented with a fluent utterance, participants' fixations toward the referent over the distractor increased over time ($\beta = 0.64$; $\SE = 0.12$; $t=5.44$). 
-In contrast, this fixation bias was reduced when the delivery was disfluent ($\beta = -0.60$; $\SE = 0.06$; $t=-10.62$). 
-For disfluent utterances, when the car-horn was present prior to disfluency (providing an alternative explanation of the disfluency), participants' fixations towards the referent over time increased in contrast to when the car-horn was absent ($\beta = 0.18$; $\SE = 0.08$; $t=2.20$). 
-The presence of the car-horn was not found to have an effect on the tendency to fixate on the referent for fluent utterances ($t=-0.7$).
-
-
 \subsection{Mouse movements}
-The proportion of mouse-movements (distance traveled) towards either object was computed for each 20ms bin from referent onset to 2000ms post-onset. 
-Figures \ref{fig:mflu} and \ref{fig:mdis} and show the proportion of mouse-movements towards either object in fluent and disfluent conditions respectively. 
-Analysis of the window from referent-onset to 800ms post-onset patterned with the eye-tracking data. 
+Figures \ref{fig:mflu} and \ref{fig:mdis} show the time-courses of proportionate mouse movements towards referents and distractors over 2000~ms from referent onset, for fluent and disfluent conditions respectively. 
+Analyses of the window from referent onset to 800ms post-onset patterned with the eye-tracking data. 
 When presented with a fluent utterance, participants' movements to the referent over the distractor increased over time ($\beta = 0.49$; $\SE = 0.07$; $t=7.36$). 
-This movement bias towards the referent over the distractor decreased when the delivery was disfluent ($\beta = -0.64$; $\SE = 0.04$; $t=-16.71$). 
-When the car-horn was present prior to a disfluency, participants' tendency to move towards the referent over the distractor increased in comparison to a disfluency not preceded by the car-horn ($\beta = 0.37$; $\SE = 0.05$; $t=6.73$).
+This bias decreased when the delivery was disfluent ($\beta = -0.64$; $\SE = 0.04$; $t=-16.71$). 
+When the car-horn was present prior to a disfluency, participants' tendency were more likely to move towards the referent over time ($\beta = 0.37$; $\SE = 0.05$; $t=6.73$). \fbox{see comment}
+%%MC please include t for fluent utterances, as at end of eye movements para
 
 
 \begin{figure}[Ht]
@@ -408,17 +404,22 @@ When the car-horn was present prior to a disfluency, participants' tendency to m
 \section{Discussion}
 Listeners' pragmatic judgments about a speaker's honesty were effected by manner of delivery.
 In keeping with the literature on deception perception, participants associated speaker disfluency with lying \citep{Zuckerman1981,depaulo2003cues}. 
-As shown in \citet{Loy2016}, listeners made these judgments quickly: 
-The effect emerged at an early stage in utterance processing, with eye- and mouse-tracking data showing biases towards referent and distractor for fluent and disfluent utterances respectively.
-Additionally, the effect was showed that the disfluency-lying association is robust against the presentation of speech in a noisy environment, in which there are potential distractions for the listener. 
+As shown by \citet{Loy2016}, listeners made these judgments quickly.
+Both eye- and mouse-tracking evidence showed that biases emerged early, with listeners committed to a pragmatic interpretation of the speaker's honesty almost as quickly as the intended referent could be identified.
+These effects were shown to be robust against the presentation of speech in a noisy environment, in which there are potential distractions for the listener.
 
+%%%MC note linking phrases---always handy :)
+Importantly, however, listeners were not neutral with regard to the available distractions.
+Where a background noise (a car-horn) was a plausible cause of the speaker's disfluency, participants showed an  initial tendency both to fixate and to move the mouse pointer towards the referent, only later fixating on and eventually clicking on the distractor.
+%%%MC note rhetorical emphasis that this is shown in two measures
+Note that this finding suggests that listeners are sensitive to momentary changes to the context in which speech occurs.
+In this respect, it differs from \citegen{Arnold2007} earlier finding that (constant) knowledge about the speaker can affect the ways in which listeners respond to disfluency.
+At face value, the finding may be taken to suggest that listeners in the present study are modelling the speaker's production system in enough detail to be able to attribute a cause to a given disfluency.
 
-The availability of an alternative, utterance-local cause of disfluency (the speaker being momentarily distracted by a car-horn) was used to investigate whether listeners' association between disfluency and lying are heuristically calculated, or whether they involve reasoning about the speaker's production system. 
-Participants showed an increase in eye- and mouse- movements to the distractor when presented with disfluent utterances---indicating the emergent bias towards interpreting the utterance as dishonest. 
-Critically, in situations when the disfluency could have been caused by a car-horn, this was preceded by an initial tendency to fixate and move towards the referent, only later fixating on and selecting the distractor. 
-The fact that the car-horn provided a local cause of disfluency is important here, as its influence shows that the associations which participants had between disfluency and lying was sensitive to contextual information which only occurred during speech. 
-This could suggest that listeners momentarily model the speaker in order to attribute a cause to a particular disfluency. 
+There are, however, two potential alternative accounts of this finding.
+The first is a heuristic
 
+%%%%%%%%%%% HERE %%%%%%%%%%%%%%
 
 This account of this suggests that participants made early inferences about the cause of a given disfluency.
 This reasoning took into account contextual information about what might cause disfluency for a given speaker.
@@ -454,7 +455,7 @@ This contextual effect could be explained in terms of heuristically calculated a
 It is not clear, however, whether, nor how, listeners might judge what constitutes as potentially distracting for a speaker.
 Alternatively, these findings could suggest that participants made early inferences about the potential causes of a specific disfluency, actively modelling the speaker's production system during the online processing of speech, and in line with previous accounts of deception detection. 
 
-
+%% mouse movements are good!
 
 \bibliography{e2}
 
