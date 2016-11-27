@@ -49,7 +49,9 @@ One account of these findings would suggest that participants made early inferen
 \maketitle
 
 
-\section{Background}
+%\section{Background}
+% apa style:  Don't start with section heading
+\noindent
 Everyday speech is for the most part spontaneous, and thus often disfluent, containing pauses, \spex{um}s, \spex{uh}s, repetitions, revisions, and mispronunciations.
 Excluding silent pauses, naturally occurring speech has a rate of approximately~6 to~10 disfluencies per~100 words \citep{Bortfeld2001,FoxTree1995}.
 The disfluent nature of speech is just one of many variable aspects of \emph{how} an utterance might be presented, and listeners must be able to cope with this variability in order to successfully understand a speaker.
@@ -296,7 +298,7 @@ One further participant was excluded because they had previously taken part in s
 %%%MC got this far
 
 \subsection{Analysis}
-Analysis was carried out in R version 3.3.0 \citep{rbase}, using the lme4 package \citep{lme4}. 
+Analysis was carried out in R version~3.3.0 \citep{rbase}, using the lme4 package \citep{lme4}. 
 Trials in which participants did not click on either the referent or distractor (0.01\%) were excluded from all analyses. 
 
 %MC much reworded: please check
@@ -304,6 +306,7 @@ Analyses for both eye and mouse movements were conducted over a time window of 8
 This window exceeds the duration of the longest critical referent name (776~ms) and is consistent with evidence that eye movements reflect the establishment of reference around 400-800~ms after noun onset \citep{Eberhard1995}.
 Eye fixation data was averaged into 20~ms bins (of 10 samples) prior to analysis.
 For each bin, we calculated the proportions of time spent fixating referent or the distractor, resulting in a measure of the proportions of fixations on either object over time.
+
 The position of the mouse was sampled every 20~ms, corresponding to one bin of eye~tracking data.
 Using the $X$ coordinates only, we calculated the number of screen pixels moved and the direction of movement (towards referent or distractor).
 The cumulative distance travelled towards each object was calculated for each bin, and divided by the total distance moved, regardless of direction.
@@ -408,54 +411,67 @@ As shown by \citet{Loy2016}, listeners made these judgments quickly.
 Both eye- and mouse-tracking evidence showed that biases emerged early, with listeners committed to a pragmatic interpretation of the speaker's honesty almost as quickly as the intended referent could be identified.
 These effects were shown to be robust against the presentation of speech in a noisy environment, in which there are potential distractions for the listener.
 
-%%%MC note linking phrases---always handy :)
-Importantly, however, listeners were not neutral with regard to the available distractions.
+%%%MC note linking phrase---always handy :)
+Importantly, listeners were not neutral with regard to the available distractions.
 Where a background noise (a car-horn) was a plausible cause of the speaker's disfluency, participants showed an  initial tendency both to fixate and to move the mouse pointer towards the referent, only later fixating on and eventually clicking on the distractor.
 %%%MC note rhetorical emphasis that this is shown in two measures
 Note that this finding suggests that listeners are sensitive to momentary changes to the context in which speech occurs.
 In this respect, it differs from \citegen{Arnold2007} earlier finding that (constant) knowledge about the speaker can affect the ways in which listeners respond to disfluency.
-At face value, the finding may be taken to suggest that listeners in the present study are modelling the speaker's production system in enough detail to be able to attribute a cause to a given disfluency.
+At face value, the finding may be taken to suggest that listeners in the present study are modelling the speaker's production system in enough detail to be able to attribute a particular cause to a given disfluency.
 
+%%MC some argumentation here is completely new.  It's actually alternative (1) which worries me the most, which is why I've tried to dismiss it out-of-hand.
 There are, however, two potential alternative accounts of this finding.
-The first is a heuristic
+The first is that it was in fact the participants who were distracted by the car-horns, and that the findings reflect their inital lack of attention to the speaker's disfluency rather than any attempt to model the cause of that disfluency.
+With attention to any disfluency attenuated, there might be an initial bias to interpret utterances as honest.
+The account becomes difficult to sustain when we take the entire pattern of results into account, though, as the `unattended' disfluencies clearly influence the eventual pragmatic interpretations of the speaker's utterances.
 
-%%%%%%%%%%% HERE %%%%%%%%%%%%%%
+The second alternative account is that participants' pragmatic judgements relied on an heuristic association between disfluency and dishonesty.
+If the heuristic were to take into account any loud noises which preceded a disfluency, then participants might be expected to behave very much like the ones in the present experiment.
+This interpretation would leave us with two questions to answer, though.
+The first concerns the specificity of the heuristic.
+Might it be sensitive to car-horns, but not to dog barks, for example?
+Would it be contextually sensitive?
+Would listeners discern between the car-horn in the present experiment, which was contextually linked to the recording of the speaker, and a similarly loud car-horn which happened to sound `outside the testing room'?
+The second question is that of how the heuristic is created in the first place.
+One possibility is that it is trained on co-occurrences (that is, participants have previously observed car-horns to be associated with disfluency, and disfluency with lying).
+Unless any loud noise acted as a cause of disfluency, such a system would very likely quickly run into a data scarcity problem \citep[see][for a similar argument concerning parsing]{Mitchell:ea:95}.
+Another possibility is that the heuristic is based upon introspection, or the listener's own understanding of what they would do as a speaker in given circumstances.
+To the extent that the latter is true, a heuristic is simply a form of speaker model (perhaps with differing implementational details).
 
-This account of this suggests that participants made early inferences about the cause of a given disfluency.
-This reasoning took into account contextual information about what might cause disfluency for a given speaker.
-Eventually, however, this was overridden by the association between disfluency and lying.
-On this view, listeners appear able to dynamically reason about the most likely explanation of disfluency, and, as the speech unfolds, make attributions about why a particular speaker in a particular context was disfluent. 
+The evidence therefore remains consistent with the view that listeners are able to reason dynamically about the most likely explanation of disfluency, and, as the speech unfolds, make attributions about why a particular speaker in a particular context has been disfluent.
 This is in line with the speaker modelling account found in lying research, suggesting that listeners detect deception by reasoning about cues relating to the cognitive load of the speaker\citep{Zuckerman1981,depaulo2003cues}.
-For the speaker modelling view, the findings here---a local cause of disfluency modulating listeners' disfluency-lying association---suggest that, if speaker modelling occurs, then it does so actively, during the early stages of comprehension. 
+From this perspective, the findings here---that an alternative cause of disfluency modulates listeners' attributions of deception to disfluency---suggest that speaker modelling affects the early stages of comprehension.
+
+%%%%% MC GOT AS FAR AS HERE
+
+Of note is the fact that \citet[][Experiment~3]{Arnold2007} did not find that distracting noises affected listeners' predictions about what speakers were likely to mention following a disfluency, although they did find a more global effect when the speaker's general tendency to be disfluent was called into question (Experiment~2).
+%%%MC three reasons: (1) different experimental details; (2) we're talking about meaning, they're talking about prediction; (3) our task, by its nature, requires ppts to REASON about the speaker.  So one conclusions is that ppts CAN take context into account (when it matters), but may not always do so, perhaps because it doesn't matter or because cues are more ambiguous.
+
+%%MC we also need to account for the fact that the basic disf-dishonesty bias wins out!!  I would say that that is due to the context of the experiment (drawing on the "need to reason" in the Arnold paragraph) and that what we're seeing is a tradeoff between fast processes and conscious reasoning.  I'd refer back to the 19 participants who made the link between disfluency and deception in post-test.
+
+%%MC final paragraph should emphasise: (1) that, at least very early, ppts are sensitive to disfluencies and the context they occur in, and that this can be attributed to some form of speaker modelling (choose words carefully based on the "2nd explanation" para above?); (2) mouse tracking usefully gives information that is comparable to eye tracking; and (3) that in general, this shows that understanding a speaker's pragmatic intentions is a contextually-rich, and very fast, process.
+
+%%MC or something like that.
+% A remaining question is how to fit the current study in with the account given in \citet{Arnold2007}, in which contextual effects on disfluency biases were limited to more global factors which would affect the speaker throughout a discourse, and in which listeners were not sensitive to local causes of disfluency.
+% There are certain differences between \citegen{Arnold2007} Experiment~3 and the one described here which might explain the contrary findings.
+% Firstly, it cold be that believable sounding disfluencies as-caused-by distraction are hard to construct:
+% In the experiment here, the distracting noise overlapped the onset of the critical disfluency \spex{Thee---uh---}, whereas in \citeauthor{Arnold2007}'s study it did not. 
+% More likely, however, is that differences are due to the fact that in \citeauthor{Arnold2007}'s study, the effect of speaker disfluency was fleeting:
+% Disfluency influenced listeners' predictions about upcoming words---biasing them towards harder-to-name objects---but there was no lasting effect on listeners' interpretations of what-was-said.
+% Whilst the measurable effect of an association between disfluency and hard-to-name objects is ephemeral, the same cannot be said for the association between disfluency and lying.
+% %why does this mean we're more likely to see an effect?
+
+% %furthermore, arnold had "thee- uh - red <referent>", we had "thee - uh- <referent>" - 
+% %in A's, following a disfl, subjects have to narrow down from 4 to 2 objects, then the bias comes apparent. 
 
 
-However, our findings are not incompatible with an explanation in terms of listeners simply having direct associations between disfluencies and certain properties of language use such as lying. 
-If Listeners heuristically associate disfluency and lying, to account for the findings here, such an heuristic would simply have to be sensitive to any loud noises which precede a disfluency.
-Importantly, disfluency effects on comprehension could still be an heuristically calculated response, rather than the result of reasoning about the production system of a particular speaker.
-It is unclear, however, how such a view would account for listeners deciding what constitutes as potentially distracting for a speaker. 
-For instance, would listeners discern between the car-horn used here, which was situated within the context of the speaker's environment, and a similarly loud noise occurring outside of the recording? 
+% Utterance-local contextual information influenced listeners' moment-to-moment pragmatic inferences about disfluencies. 
+% Whilst being eventually overridden by listeners' biases towards interpreting disfluent utterances as dishonest, the availability of an alternative, external cause of speaker disfluency (being momentarily distracted) resulted in an initial bias in eye- and mouse-movements towards the referent. 
+% This contextual effect could be explained in terms of heuristically calculated assocations between disfluency and lying and between disfluency and loud noises.
+% It is not clear, however, whether, nor how, listeners might judge what constitutes as potentially distracting for a speaker.
+% Alternatively, these findings could suggest that participants made early inferences about the potential causes of a specific disfluency, actively modelling the speaker's production system during the online processing of speech, and in line with previous accounts of deception detection. 
 
-%%%% Delete the following para? miss it out completely?
-A remaining question is how to fit the current study in with the account given in \citet{Arnold2007}, in which contextual effects on disfluency biases were limited to more global factors which would affect the speaker throughout a discourse, and in which listeners were not sensitive to local causes of disfluency.
-There are certain differences between \citegen{Arnold2007} Experiment~3 and the one described here which might explain the contrary findings.
-Firstly, it cold be that believable sounding disfluencies as-caused-by distraction are hard to construct:
-In the experiment here, the distracting noise overlapped the onset of the critical disfluency \spex{Thee---uh---}, whereas in \citeauthor{Arnold2007}'s study it did not. 
-More likely, however, is that differences are due to the fact that in \citeauthor{Arnold2007}'s study, the effect of speaker disfluency was fleeting:
-Disfluency influenced listeners' predictions about upcoming words---biasing them towards harder-to-name objects---but there was no lasting effect on listeners' interpretations of what-was-said.
-Whilst the measurable effect of an association between disfluency and hard-to-name objects is ephemeral, the same cannot be said for the association between disfluency and lying.
-%why does this mean we're more likely to see an effect?
-
-%furthermore, arnold had "thee- uh - red <referent>", we had "thee - uh- <referent>" - 
-%in A's, following a disfl, subjects have to narrow down from 4 to 2 objects, then the bias comes apparent. 
-
-
-Utterance-local contextual information influenced listeners' moment-to-moment pragmatic inferences about disfluencies. 
-Whilst being eventually overridden by listeners' biases towards interpreting disfluent utterances as dishonest, the availability of an alternative, external cause of speaker disfluency (being momentarily distracted) resulted in an initial bias in eye- and mouse-movements towards the referent. 
-This contextual effect could be explained in terms of heuristically calculated assocations between disfluency and lying and between disfluency and loud noises.
-It is not clear, however, whether, nor how, listeners might judge what constitutes as potentially distracting for a speaker.
-Alternatively, these findings could suggest that participants made early inferences about the potential causes of a specific disfluency, actively modelling the speaker's production system during the online processing of speech, and in line with previous accounts of deception detection. 
-
-%% mouse movements are good!
+% %% mouse movements are good!
 
 \bibliography{e2}
 
