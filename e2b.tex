@@ -125,7 +125,7 @@ If detailed speaker modelling is occurring, any inferences regarding the cause o
 
 %%% so this becomes another reason for assuming that it's a heuristic????
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Another reason for assuming that a heuristic is at play is that listeners' interpretations of disfluency may be inaccurate.
+Another reason for assuming that an heuristic is at play is that listeners' interpretations of disfluency may be inaccurate.
 Although listeners tend to associate disfluency with lying \citep{Loy2016,Zuckerman1981}, some evidence suggests that, in production, disfluency occurs more frequently during truth-telling than during deception \citep{Arciuli2010markers,Arciuli2009lies,Benus2006pauses}.
 \citet{DePaulo1982actual} demonstrated a  mismatch between disfluency as an actual and as a perceived cue to deception:
 The rates of filled pauses produced by speakers did not differ during descriptions they made about people whom they liked or disliked from descriptions made when they were asked to pretend to feel the opposite way about them. 
@@ -137,7 +137,7 @@ Listeners appear to rely on a rule-of-thumb association between disfluency and l
 However, it is possible that any inaccuracy is actually the result of a more detailed attempt to model the speaker.
 Lying is associated with cognitive effort, and cognitive effort is associated with disfluency, perhaps predicated not on experience as a listener but on introspection as a speaker:
 Speakers believe themselves to be more disfluent when lying \citep{Zuckerman1981}, and this belief extends to others' language production.
-Evidence for this conjecture would lie in whether listeners' assessments of speaker veracity were affected by specific circumstances which a heuristic would be unlikely to take into account.
+Evidence for this conjecture would lie in whether listeners' assessments of speaker veracity were affected by specific circumstances which an heuristic would be unlikely to take into account.
 One such circumstance would be the availability of an alternative cause of a given disfluency, such as the speaker being momentarily distracted.
 If listeners are reasoning about the causes of speakers' disfluencies, and alternative causes of those disfluencies are readily available, then the association between disfluency and lying should be weakened.
 
@@ -162,9 +162,7 @@ As in \citet{Loy2016}, we measured eye- and mouse- movements, to study the time 
 %\subsubsection{visual}
 Visual stimuli consisting of 120 black and white line drawings, taken from \citet{Snodgrass1980}, were presented to participants in pairs across 60 trials (20 experimental, 40 fillers). 
 Each trial presented the \textit{referent} (the object which the speaker identified as having the treasure behind for that trial), and a \textit{distractor}, which was chosen at random without replacement from a set of 60 objects. 
-To control for the effect of the bias towards interpreting disfluency to difficulty of description \citep{Arnold2007}, critical referents and distractors were matched for familiarity ($H \ge 3.0$)
-%%MC are you sure familiarity is measured usinf H  I would expect that to be true of ease-of-naming (only)
-and ease-of-naming ($<1.0$). 
+To control for the effect of the bias towards interpreting disfluency to difficulty of description \citep{Arnold2007}, critical referents and distractors were matched for familiarity ($F \ge 3.0$) and ease-of-naming ($H <1.0$). 
 Object pairings with the same phonetic onset were avoided. 
 
 %\subsubsection{utterances|audio}
@@ -241,7 +239,6 @@ To corroborate this, during the initial explanation of the experiment, participa
 These were presented alongside the images which the speaker spoke about (see Figure \ref{fig:vid}). 
 Participants could thus infer whether the speaker was telling the truth about the treasure's location in each video.
 The speaker in the first video was honest and fluent; in the second she was dishonest and disfluent; and in the third, honest and disfluent but distracted (the speaker glanced sideways towards a car following a car-horn sound effect which occurred immediately prior to her disfluency).
-%%%MC why the sudden ampersands?  (edited out now, obviously.  This paragraph read like it had been written in note form.  Please check the new version)
 
 \begin{figure}[Ht]
   \centering
@@ -254,9 +251,8 @@ The speaker in the first video was honest and fluent; in the second she was dish
 To ensure that analysis could be run only on data from participants for whom the cover story held, a post-test questionnaire assessed whether participants believed that the utterances were produced outdoors, as claimed.
 Once they had been debriefed about the true nature of the experiment, participants were asked again whether it had occurred to them during the experiment that the recordings might not have been produced outside in the street.
 
-%%MC pretty much totally rewritten to make it all a bit more direct.  Please check.
 \subsection{Procedure}
-Stimuli were displayed on a 21~in.\@ CRT monitor, placed 850~mm from an Eyelink~1000 Tower-mounted eye-tracker which tracked eye-movements at 500~Hz (right eye only). 
+Stimuli were displayed on a 21~in.\@ CRT monitor, placed 850~mm from an Eyelink~1000 Tower-mounted eye-tracker which tracked eye movements at 500~Hz (right eye only). 
 Audio was presented in stereo from speakers on either side of the monitor. 
 Mouse coordinates were sampled at 50~Hz. 
 The experiment was presented using OpenSesame version~3.0 \citep{Mathot2012}.
@@ -295,13 +291,11 @@ Participants were recruited from the University of Edinburgh community, and part
 Twelve participants were excluded on the basis that they indicated either in the questionnaire~(10) or verbally~(2) that they did not believe the cover story.
 One further participant was excluded because they had previously taken part in similar study.
 
-%%%MC got this far
 
 \subsection{Analysis}
 Analysis was carried out in R version~3.3.0 \citep{rbase}, using the lme4 package \citep{lme4}. 
 Trials in which participants did not click on either the referent or distractor (0.01\%) were excluded from all analyses. 
 
-%MC much reworded: please check
 Analyses for both eye and mouse movements were conducted over a time window of 800~ms from the onset of the referent name, matching the analyses in \citet{Loy2016}.
 This window exceeds the duration of the longest critical referent name (776~ms) and is consistent with evidence that eye movements reflect the establishment of reference around 400-800~ms after noun onset \citep{Eberhard1995}.
 Eye fixation data was averaged into 20~ms bins (of 10 samples) prior to analysis.
@@ -312,8 +306,7 @@ Using the $X$ coordinates only, we calculated the number of screen pixels moved 
 The cumulative distance travelled towards each object was calculated for each bin, and divided by the total distance moved, regardless of direction.
 The resulting measure was the proportion of total distance travelled towards either object over time.
 Trials for which the total mouse distance travelled post referent-onset was less than one third of the distance from the screen centre to the near edge of an object were excluded (0.03\% of trials). 
-%%%MC movements beyond edge:  any idea how many samples were rejected on this basis?
-Movements beyond the outer edge of either object were considered to be `overshooting' and were not included in calculations.
+Movements beyond the outer edge of either object were considered to be `overshooting' and were not included in calculations (4\% of samples).
 
 We used an empirical logit transform to measure relative biases in eye and mouse movements \citep{Barr2008}.
 Eye movement biases were calculated from the proportions of referent to distractor fixations;
@@ -361,45 +354,47 @@ Analyses were conducted over a time window from referent onset to 800~ms post on
 For fluent utterances, participants displayed an early fixation bias towards the referent, which increased over time ($\beta = 0.64$; $\SE = 0.12$; $t=5.44$). 
 For disfluent utterances, the fixation bias towards the referent was reduced ($\beta = -0.60$; $\SE = 0.06$; $t=-10.62$), such that a preference for the distractor over the referent emerged little later on in the trial.
 When an alternative, local cause of disfluency (the car-horn) was present prior to a disfluency, participants were more likely to bias fixations to the referent over time ($\beta = 0.18$; $\SE = 0.08$; $t=2.20$).
-The presence of the car-horn was not found to have an effect on the tendency to fixate on the referent for fluent utterances ($t=-0.7$).
-%%MC cite t to 2dp please, for consistency
+The presence of the car-horn was not found to have an effect on the tendency to fixate on the referent for fluent utterances ($t=-0.60$).
 
 \begin{figure}[Ht]
   \centering
-	\includegraphics[scale=.5]{fluent.png}
-  \caption{Mean proportion of fixations to either object (referent and distractor) for fluent utterances split by presence of speaker distraction, calculated out of the total sum of fixations for each 20ms time bin from referent-onset to 2000ms post-onset. Shaded areas represent $\pm 1$ standard error of the mean. Time bins in which a bias towards either the referent or distractor was evident are highlighted with respect to condition and direction of bias (assessed by a mixed effect model estimating the empirical logit of fixations to the referent minus the empirical logit of fixations to the distractor, with by-subject and by-item random intercepts).}
+	\includegraphics[width=\linewidth]{eye_fl.pdf}
+  \caption{Mean proportion of fixations to either object (referent and distractor) for fluent utterances split by presence of speaker distraction, calculated out of the total sum of fixations for each 20ms time bin from referent-onset to 2000ms post-onset. Shaded areas represent $\pm 1$ standard error of the mean. Time bins in which a bias towards either the referent or distractor was evident ($|t|>2$) are highlighted with respect to condition and direction of bias (assessed by a mixed effect model estimating the empirical logit of fixations to the referent minus the empirical logit of fixations to the distractor, with by-subject and by-item random intercepts)}
   \label{fig:flueye}
 \end{figure}
 
 
 \begin{figure}[Ht] % might need to change placement
   \centering
-	\includegraphics[scale=.5]{disfluent.png}
-  \caption{Mean proportion of fixations to either object (referent and distractor) for disfluent utterances split by presence of speaker distraction, calculated out of the total sum of fixations for each 20ms time bin from referent-onset to 2000ms post-onset. Shaded areas represent $\pm 1$ standard error of the mean. Time bins in which a bias towards either the referent or distractor was evident are highlighted with respect to condition and direction of bias (assessed by a mixed effect model estimating the empirical logit of fixations to the referent minus the empirical logit of fixations to the distractor, with by-subject and by-item random intercepts).}
+	\includegraphics[width=\linewidth]{eye_disf.pdf}
+  \caption{Mean proportion of fixations to either object (referent and distractor) for disfluent utterances split by presence of speaker distraction, calculated out of the total sum of fixations for each 20ms time bin from referent-onset to 2000ms post-onset. Shaded areas represent $\pm 1$ standard error of the mean. Time bins in which a bias towards either the referent or distractor was evident ($|t|>2$) are highlighted with respect to condition and direction of bias (assessed by a mixed effect model estimating the empirical logit of fixations to the referent minus the empirical logit of fixations to the distractor, with by-subject and by-item random intercepts)}
   \label{fig:diseye}
 \end{figure}
 
 \subsection{Mouse movements}
 Figures \ref{fig:mflu} and \ref{fig:mdis} show the time-courses of proportionate mouse movements towards referents and distractors over 2000~ms from referent onset, for fluent and disfluent conditions respectively. 
-Analyses of the window from referent onset to 800ms post-onset patterned with the eye-tracking data. 
+%Analyses of the window from referent onset to 800ms post-onset patterned with the eye-tracking data. 
 When presented with a fluent utterance, participants' movements to the referent over the distractor increased over time ($\beta = 0.49$; $\SE = 0.07$; $t=7.36$). 
 This bias decreased when the delivery was disfluent ($\beta = -0.64$; $\SE = 0.04$; $t=-16.71$). 
-When the car-horn was present prior to a disfluency, participants' tendency were more likely to move towards the referent over time ($\beta = 0.37$; $\SE = 0.05$; $t=6.73$). \fbox{see comment}
-%%MC please include t for fluent utterances, as at end of eye movements para
+When the car-horn was present prior to a disfluency, participants' were more likely to move towards the referent over time ($\beta = 0.37$; $\SE = 0.06$; $t=6.73$). 
+%IMPORTANT %JK -- I had misread and looked at the initial effect of the car-horn, and not it's effect over time. annoying as it means eye and mouse don't pattern completely. 
+\fbox{see comment! important development?}
+Unlike the eye-tracking data, the presence of the car-horn reduced participants' tendencies to move towards referent for fluent utterances ($\beta = -0.14$; $\SE = 0.04$; $t=-3.59$).
+
 
 
 \begin{figure}[Ht]
   \centering
-	\includegraphics[scale=.5]{mflu.png}
-  \caption{Mean proportion of cumulative distance traveled toward each object (referent or distractor) in fluent conditions split by presence of speaker distraction, from referent onset to 2000ms post-onset. Proportions calculated out of total cumulative distance moved the mouse from referent-onset until that time bin. Shaded areas represent $\pm 1$ standard error of the mean.}
+	\includegraphics[width=\linewidth]{mouse_fl.pdf}
+  \caption{Mean proportion of cumulative distance traveled toward each object (referent or distractor) in fluent conditions split by presence of speaker distraction, from referent onset to 2000ms post-onset. Proportions calculated out of total cumulative distance moved the mouse from referent-onset until that time bin. Shaded areas represent $\pm 1$ standard error of the mean. Time bins in which a bias towards either the referent or distractor was evident ($|t|>2$) are highlighted with respect to condition and direction of bias (assessed by a mixed effect model estimating the empirical logit of movements to the referent minus the empirical logit of movements to the distractor, with by-subject and by-item random intercepts)}
   \label{fig:mflu}
 \end{figure}
 
 
 \begin{figure}[Ht]
   \centering
-	\includegraphics[scale=.5]{mdisfl.png}
-  \caption{Mean proportion of cumulative distance traveled toward each object (referent or distractor) in disfluent conditions split by presence of speaker distraction, from referent onset to 2000ms post-onset. Proportions calculated out of total cumulative distance moved the mouse from referent-onset until that time bin. Shaded areas represent $\pm 1$ standard error of the mean.}
+	\includegraphics[width=\linewidth]{mouse_disf.pdf}
+  \caption{Mean proportion of cumulative distance traveled toward each object (referent or distractor) in disfluent conditions split by presence of speaker distraction, from referent onset to 2000ms post-onset. Proportions calculated out of total cumulative distance moved the mouse from referent-onset until that time bin. Shaded areas represent $\pm 1$ standard error of the mean. Time bins in which a bias towards either the referent or distractor was evident ($|t|>2$) are highlighted with respect to condition and direction of bias (assessed by a mixed effect model estimating the empirical logit of movements to the referent minus the empirical logit of movements to the distractor, with by-subject and by-item random intercepts)}
   \label{fig:mdis}
 \end{figure}
 
@@ -413,16 +408,19 @@ These effects were shown to be robust against the presentation of speech in a no
 
 %%%MC note linking phrase---always handy :)
 Importantly, listeners were not neutral with regard to the available distractions.
-Where a background noise (a car-horn) was a plausible cause of the speaker's disfluency, participants showed an  initial tendency both to fixate and to move the mouse pointer towards the referent, only later fixating on and eventually clicking on the distractor.
+Where a background noise (a car-horn) was a plausible cause of the speaker's disfluency, participants showed an initial tendency both to fixate and to move the mouse pointer towards the referent, only later fixating on and eventually clicking on the distractor.
 %%%MC note rhetorical emphasis that this is shown in two measures
 Note that this finding suggests that listeners are sensitive to momentary changes to the context in which speech occurs.
 In this respect, it differs from \citegen{Arnold2007} earlier finding that (constant) knowledge about the speaker can affect the ways in which listeners respond to disfluency.
 At face value, the finding may be taken to suggest that listeners in the present study are modelling the speaker's production system in enough detail to be able to attribute a particular cause to a given disfluency.
 
 %%MC some argumentation here is completely new.  It's actually alternative (1) which worries me the most, which is why I've tried to dismiss it out-of-hand.
+%%JK possibly harder to dismiss it, with the mouse-movements as they are..
 There are, however, two potential alternative accounts of this finding.
-The first is that it was in fact the participants who were distracted by the car-horns, and that the findings reflect their inital lack of attention to the speaker's disfluency rather than any attempt to model the cause of that disfluency.
-With attention to any disfluency attenuated, there might be an initial bias to interpret utterances as honest.
+The first is that it was in fact the participants who were distracted by the car-horns, and that the findings reflect their initial lack of attention to the speaker's disfluency rather than any attempt to model the cause of that disfluency.
+There is possible evidence for this in the fact that the car-horn was found to influence participants' mouse movements during fluent utterances. 
+With attention to any disfluency attenuated, there might be an initial bias to interpret utterances as honest. 
+%JK but then the car-horn in the fluent utterances makes people move more towards the distractor?
 The account becomes difficult to sustain when we take the entire pattern of results into account, though, as the `unattended' disfluencies clearly influence the eventual pragmatic interpretations of the speaker's utterances.
 
 The second alternative account is that participants' pragmatic judgements relied on an heuristic association between disfluency and dishonesty.
@@ -436,7 +434,7 @@ The second question is that of how the heuristic is created in the first place.
 One possibility is that it is trained on co-occurrences (that is, participants have previously observed car-horns to be associated with disfluency, and disfluency with lying).
 Unless any loud noise acted as a cause of disfluency, such a system would very likely quickly run into a data scarcity problem \citep[see][for a similar argument concerning parsing]{Mitchell:ea:95}.
 Another possibility is that the heuristic is based upon introspection, or the listener's own understanding of what they would do as a speaker in given circumstances.
-To the extent that the latter is true, a heuristic is simply a form of speaker model (perhaps with differing implementational details).
+To the extent that the latter is true, an heuristic is simply a form of speaker modelling (perhaps with differing implementational details).
 
 The evidence therefore remains consistent with the view that listeners are able to reason dynamically about the most likely explanation of disfluency, and, as the speech unfolds, make attributions about why a particular speaker in a particular context has been disfluent.
 This is in line with the speaker modelling account found in lying research, suggesting that listeners detect deception by reasoning about cues relating to the cognitive load of the speaker\citep{Zuckerman1981,depaulo2003cues}.
@@ -445,33 +443,26 @@ From this perspective, the findings here---that an alternative cause of disfluen
 %%%%% MC GOT AS FAR AS HERE
 
 Of note is the fact that \citet[][Experiment~3]{Arnold2007} did not find that distracting noises affected listeners' predictions about what speakers were likely to mention following a disfluency, although they did find a more global effect when the speaker's general tendency to be disfluent was called into question (Experiment~2).
-%%%MC three reasons: (1) different experimental details; (2) we're talking about meaning, they're talking about prediction; (3) our task, by its nature, requires ppts to REASON about the speaker.  So one conclusions is that ppts CAN take context into account (when it matters), but may not always do so, perhaps because it doesn't matter or because cues are more ambiguous.
+There are a couple of possibilities for this:
+Firstly, various differences between experiments---the construction of utterances, for example---might simply mean that in our experiment disfluency appeared more believably caused by distraction.
+Secondly, it might be that whilst a distracting noise does not influence listeners' predictions of upcoming words, as in \citet{Arnold2007}, it does affect the interpretation of a speaker's meaning.
+The treasure hunting game used in the experiment here, by its nature, requires participants to reason about the speaker:
+It may be that listeners can take context into account when it matters---such as in assessing speaker veracity---but may not always do so, perhaps because for other effects of disfluency there are often no lasting consequences.
 
-%%MC we also need to account for the fact that the basic disf-dishonesty bias wins out!!  I would say that that is due to the context of the experiment (drawing on the "need to reason" in the Arnold paragraph) and that what we're seeing is a tradeoff between fast processes and conscious reasoning.  I'd refer back to the 19 participants who made the link between disfluency and deception in post-test.
+The fact that the experiment above requires listeners to reason about the speaker might also go some way to explaining the persistence of participants' disfluency-lying bias in the face of an alternative explanation for disfluency; it is important to remember that the influence of the car-horn was only temporary. 
+This is likely due to participants consciously reasoning that, in the context of the treasure hunting game, disfluency signals a lie: 
+That 19~out of~24 participants made this link in the post-test questionnaire supports this suggestion.
+One account of this is that whilst participants were fast to accommodate contextual information as a cause of speaker disfluency, this was \term{overridden} by the explicit association between disfluency and dishonesty.
+%JK 'explicit' or 'conscious'?
 
-%%MC final paragraph should emphasise: (1) that, at least very early, ppts are sensitive to disfluencies and the context they occur in, and that this can be attributed to some form of speaker modelling (choose words carefully based on the "2nd explanation" para above?); (2) mouse tracking usefully gives information that is comparable to eye tracking; and (3) that in general, this shows that understanding a speaker's pragmatic intentions is a contextually-rich, and very fast, process.
-
-%%MC or something like that.
-% A remaining question is how to fit the current study in with the account given in \citet{Arnold2007}, in which contextual effects on disfluency biases were limited to more global factors which would affect the speaker throughout a discourse, and in which listeners were not sensitive to local causes of disfluency.
-% There are certain differences between \citegen{Arnold2007} Experiment~3 and the one described here which might explain the contrary findings.
-% Firstly, it cold be that believable sounding disfluencies as-caused-by distraction are hard to construct:
-% In the experiment here, the distracting noise overlapped the onset of the critical disfluency \spex{Thee---uh---}, whereas in \citeauthor{Arnold2007}'s study it did not. 
-% More likely, however, is that differences are due to the fact that in \citeauthor{Arnold2007}'s study, the effect of speaker disfluency was fleeting:
-% Disfluency influenced listeners' predictions about upcoming words---biasing them towards harder-to-name objects---but there was no lasting effect on listeners' interpretations of what-was-said.
-% Whilst the measurable effect of an association between disfluency and hard-to-name objects is ephemeral, the same cannot be said for the association between disfluency and lying.
-% %why does this mean we're more likely to see an effect?
-
-% %furthermore, arnold had "thee- uh - red <referent>", we had "thee - uh- <referent>" - 
-% %in A's, following a disfl, subjects have to narrow down from 4 to 2 objects, then the bias comes apparent. 
+The availability of an alternative local cause of disfluency influenced the initial stages of participants' judgments about a speaker's honesty. 
+The results of the current study show that, in situations which require reasoning about a speaker's honesty, listeners are sensitive to disfluencies and the context in which they occur.
+%JK insert mouse-tracking bit here? even though doesn't fully pattern? I mean, it does for disfluent, just not fluent..
+This sensitivity can be attributed to a form of speaker modelling, but the implementation of such modelling remains unclear.
+Listeners might model a speaker actively enough such that they attribute specific causes to particular disfluencies, or, alternatively, such speaker modelling might occur via introspection which informs heuristic associations between disfluency, context, and lying. 
+One thing, at least, is clear: Understanding a speaker's pragmatic intentions is clearly a contextually rich, and very fast, process. 
 
 
-% Utterance-local contextual information influenced listeners' moment-to-moment pragmatic inferences about disfluencies. 
-% Whilst being eventually overridden by listeners' biases towards interpreting disfluent utterances as dishonest, the availability of an alternative, external cause of speaker disfluency (being momentarily distracted) resulted in an initial bias in eye- and mouse-movements towards the referent. 
-% This contextual effect could be explained in terms of heuristically calculated assocations between disfluency and lying and between disfluency and loud noises.
-% It is not clear, however, whether, nor how, listeners might judge what constitutes as potentially distracting for a speaker.
-% Alternatively, these findings could suggest that participants made early inferences about the potential causes of a specific disfluency, actively modelling the speaker's production system during the online processing of speech, and in line with previous accounts of deception detection. 
-
-% %% mouse movements are good!
 
 \bibliography{e2}
 
