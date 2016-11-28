@@ -22,7 +22,8 @@
 \newcommand*{\SE}{\mathit{SE}} % fix funny "SE" spacing
 
 \title{Contextual Effects on Online Pragmatic Inferences of Deception}
-\author{JK; JL; MC}
+\author{Josiah King, Jia Loy, Martin Corley}
+\affiliations{University of Edinburgh}
 \date{\today}
 
 
@@ -36,7 +37,7 @@ The extent to which contextual information is properly taken into account in the
 If listeners are reasoning about the cause of a disfluency, and an alternative cause of a disfluency becomes available, then disfluency biases such as the disfluency-lying association should be weakened.
 
 
-Participants listened to a speaker describe the locations of treasure (``The treasure is behind [the]/[thee---uh---] \textless referent\textgreater .''), while viewing scenes comprising the referent and a distractor. 
+Participants listened to a speaker describe the locations of treasure (``The treasure is behind [the]/[thee, uh] \textless referent\textgreater .''), while viewing scenes comprising the referent and a distractor. 
 They were told that not all utterances would be honest, and their task was to click on the suspected location of the treasure. 
 In line with previous work, participants were more likely to click on the distractor when the description was disfluent, and this effect corresponded to an early fixation bias, demonstrating the online nature of the pragmatic judgement.
 The present study, however, also manipulated the presence of a plausible external cause of speaker disfluency. 
@@ -114,7 +115,7 @@ This heuristic association would only be affected by very clear evidence that it
 
 One reason for believing that the association between disfluency and lying is heuristically calculated is evidence from \citet{Loy2016}, which highlights the speed at which pragmatic interpretations are made.
 \citeauthor{Loy2016}'s study was framed as a treasure hunting game, in which listeners were asked to guess the location of a reward by clicking on one of two depicted objects in each trial.
-Participants heard recorded utterances which indicated the location of the treasure, and which were either fluent or disfluent (\spex{The treasure is behind [the]/[thee---uh---] \textless referent\textgreater}).
+Participants heard recorded utterances which indicated the location of the treasure, and which were either fluent or disfluent (\spex{The treasure is behind [the]/[thee, uh] \textless referent\textgreater}).
 Participants were told that the speaker would be dishonest half of the time. 
 The judgements which participants made about the speaker's honesty in each trial were implictly measured by examining which of the two objects they clicked:
 Clicking on the named object corresponded to a judgement that the speaker was telling the truth, whereas a click on the other object meant that the speaker was thought to be lying.
@@ -169,7 +170,7 @@ Object pairings with the same phonetic onset were avoided.
 % As in \citet{Loy2016}, each referent was associated with a recording of a speaker naming the depicted object as the location of the treasure, and as before, critical utterances were either fluent or disfluent. 
 % The present study, however, manipulated not only the manner of delivery, but also the presence of a plausible cause of speaker distraction. 
 Audio files were constructed such that the critical referents could be heard in four conditions varying by delivery (fluent vs.\@ disfluent) and presence of distraction (absent vs.\@ present). 
-The disfluent variants were created by splicing a prolonged article followed by a filled pause (\spex{Thee---uh,}) into the fluent utterances, directly before the mention of the referent.
+The disfluent variants were created by splicing a prolonged article followed by a filled pause (\spex{Thee, uh}) into the fluent utterances, directly before the mention of the referent.
 This corresponds to the utterance-medial position used by \citet{Loy2016}:
 We considered it to be more believable that such a disfluency would be caused by an environmental distraction.
 Each referent was paired with a unique clip of ambient traffic and street noise, over which the recordings in their four variants were presented.
@@ -179,9 +180,9 @@ A sample set of materials is schematically represented in (\ref{sec:materials}).
 
 \begin{examples}\label{sec:materials}
 \item \textbf{fluent, distraction absent:} The treasure is behind the \textless referent\textgreater .
-\item \textbf{disfluent, distraction absent:} The treasure is behind thee, uh ... \textless referent\textgreater .
+\item \textbf{disfluent, distraction absent:} The treasure is behind thee, uh \textless referent\textgreater .
 \item \textbf{fluent, distraction present:} The treasure is $\underbracket{\text{behind the}}_\text{horn}$ \textless referent\textgreater .
-\item \textbf{disfluent, distraction present:} The treasure is $\underbracket{\text{behind thee}}_\text{horn}$, uh ...\textless referent\textgreater .
+\item \textbf{disfluent, distraction present:} The treasure is $\underbracket{\text{behind thee}}_\text{horn}$, uh \textless referent\textgreater .
 \end{examples}
 
 
@@ -356,6 +357,52 @@ For disfluent utterances, the fixation bias towards the referent was reduced ($\
 When an alternative, local cause of disfluency (the car-horn) was present prior to a disfluency, participants were more likely to bias fixations to the referent over time ($\beta = 0.18$; $\SE = 0.08$; $t=2.20$).
 The presence of the car-horn was not found to have an effect on the tendency to fixate on the referent for fluent utterances ($t=-0.60$).
 
+
+%JK Model output below
+\iffalse
+     AIC      BIC   logLik deviance df.resid 
+ 63965.5  64192.6 -31953.8  63907.5    18535 
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.72017 -0.81217  0.07162  0.83430  2.40949 
+
+Random effects:
+ Groups   Name               Variance Std.Dev. Corr             
+ subject  (Intercept)        0.19870  0.4458                    
+          time2              0.13538  0.3679   -0.64            
+          deliverydisfluent  0.21796  0.4669   -0.71  0.10      
+          distractionpresent 0.18110  0.4256   -0.22 -0.41  0.36
+ referent (Intercept)        0.23398  0.4837                    
+          time2              0.12319  0.3510   -0.69            
+          deliverydisfluent  0.12515  0.3538   -0.20  0.04      
+          distractionpresent 0.07829  0.2798   -0.69  0.11 -0.16
+ Residual                    1.78674  1.3367                    
+Number of obs: 18564, groups:  subject, 24; referent, 20
+
+Fixed effects:
+                                           Estimate Std. Error t value
+(Intercept)                                -0.27445    0.14685  -1.869
+time2                                       0.63704    0.11571   5.506
+deliverydisfluent                           0.37085    0.13606   2.726
+distractionpresent                         -0.09425    0.12098  -0.779
+time2:deliverydisfluent                    -0.59827    0.05635 -10.618
+time2:distractionpresent                    0.03355    0.05635   0.595
+deliverydisfluent:distractionpresent        0.02966    0.08008   0.370
+time2:deliverydisfluent:distractionpresent  0.17569    0.08006   2.194
+
+Correlation of Fixed Effects:
+            (Intr) time2  dlvryd dstrct tm2:dl tm2:ds dlvry:
+time2       -0.680                                          
+dlvrydsflnt -0.473  0.147                                   
+dstrctnprsn -0.448 -0.057  0.229                            
+tm2:dlvryds  0.167 -0.243 -0.361 -0.203                     
+tm2:dstrctn  0.167 -0.243 -0.180 -0.406  0.500              
+dlvrydsfln:  0.135 -0.149 -0.291 -0.328  0.613  0.613       
+tm2:dlvryd: -0.118  0.171  0.254  0.286 -0.704 -0.704 -0.871
+\fi
+
+
 \begin{figure}[Ht]
   \centering
 	\includegraphics[width=\linewidth]{eye_fl.pdf}
@@ -374,12 +421,57 @@ The presence of the car-horn was not found to have an effect on the tendency to 
 \subsection{Mouse movements}
 Figures \ref{fig:mflu} and \ref{fig:mdis} show the time-courses of proportionate mouse movements towards referents and distractors over 2000~ms from referent onset, for fluent and disfluent conditions respectively. 
 %Analyses of the window from referent onset to 800ms post-onset patterned with the eye-tracking data. 
-When presented with a fluent utterance, participants' movements to the referent over the distractor increased over time ($\beta = 0.49$; $\SE = 0.07$; $t=7.36$). 
+When presented with a fluent utterance, participants' movements to the referent over the distractor increased over time ($\beta = 0.49$; $\SE = 0.07$; $t=7.47$). 
 This bias decreased when the delivery was disfluent ($\beta = -0.64$; $\SE = 0.04$; $t=-16.71$). 
-When the car-horn was present prior to a disfluency, participants' were more likely to move towards the referent over time ($\beta = 0.37$; $\SE = 0.06$; $t=6.73$). 
+When the car-horn was present prior to a disfluency, participants' were more likely to move towards the referent over time ($\beta = 0.37$; $\SE = 0.05$; $t=6.73$). 
 %IMPORTANT %JK -- I had misread and looked at the initial effect of the car-horn, and not it's effect over time. annoying as it means eye and mouse don't pattern completely. 
 \fbox{see comment! important development?}
 Unlike the eye-tracking data, the presence of the car-horn reduced participants' tendencies to move towards referent for fluent utterances ($\beta = -0.14$; $\SE = 0.04$; $t=-3.59$).
+
+
+%JK model below
+\iffalse
+     AIC      BIC   logLik deviance df.resid 
+ 47086.7  47312.6 -23514.4  47028.7    17827 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.1226 -0.4097 -0.0386  0.4392  3.4683 
+
+Random effects:
+ Groups   Name               Variance Std.Dev. Corr             
+ subject  (Intercept)        0.02688  0.1639                    
+          time3              0.03029  0.1741    0.03            
+          deliverydisfluent  0.06708  0.2590   -0.48  0.21      
+          distractionpresent 0.09474  0.3078   -0.78 -0.39  0.03
+ referent (Intercept)        0.06437  0.2537                    
+          time3              0.04759  0.2181   -0.63            
+          deliverydisfluent  0.11471  0.3387   -0.58  0.28      
+          distractionpresent 0.05744  0.2397   -0.34 -0.19 -0.21
+ Residual                    0.79566  0.8920                    
+Number of obs: 17856, groups:  subject, 24; referent, 20
+
+Fixed effects:
+                                           Estimate Std. Error t value
+(Intercept)                                -0.19960    0.07109  -2.808
+time3                                       0.49324    0.06606   7.467
+deliverydisfluent                           0.35740    0.10000   3.574
+distractionpresent                          0.04868    0.09103   0.535
+time3:deliverydisfluent                    -0.64220    0.03843 -16.712
+time3:distractionpresent                   -0.13761    0.03832  -3.591
+deliverydisfluent:distractionpresent       -0.10639    0.05448  -1.953
+time3:deliverydisfluent:distractionpresent  0.36643    0.05444   6.731
+
+Correlation of Fixed Effects:
+            (Intr) time3  dlvryd dstrct tm3:dl tm3:ds dlvry:
+time3       -0.495                                          
+dlvrydsflnt -0.573  0.311                                   
+dstrctnprsn -0.523 -0.121 -0.006                            
+tm3:dlvryds  0.229 -0.284 -0.333 -0.179                     
+tm3:dstrctn  0.230 -0.285 -0.163 -0.366  0.490              
+dlvrydsfln:  0.185 -0.174 -0.269 -0.295  0.612  0.612       
+tm3:dlvryd: -0.162  0.201  0.235  0.258 -0.706 -0.703 -0.870
+\fi
 
 
 
