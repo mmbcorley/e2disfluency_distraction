@@ -154,7 +154,7 @@ Listeners might attribute disfluency to the speaker being momentarily distracted
 \section{Experiment}
 
 The experiment followed a 2~(fluent vs.\@ disfluent) $\times$~2 (distraction absent vs.\@ present) design.
-Subjects participated in a visual world paradigm game, similar to that used by \citet{Loy2016}, in which they guessed the location of some treasure based on utterances made by a potentially deceitful speaker, ostensibly recorded outdoors in a busy street.
+Participants took part in a visual world paradigm game, similar to that used by \citet{Loy2016}, in which they guessed the location of some treasure based on utterances made by a potentially deceitful speaker, ostensibly recorded outdoors in a busy street.
 Half of the critical utterances were fluent, and half disfluent; in half of all critical cases, a car-horn was clearly audible immediately prior to the disfluency, or in the equivalent parts of fluent utterances.
 As in \citet{Loy2016}, we measured eye- and mouse- movements, to study the time course of listeners' pragmatic judgments about the honesty of an utterance, as well as their final interpretation of each utterance (object clicked).
 
@@ -168,8 +168,8 @@ Object pairings with the same phonetic onset were avoided.
 
 Audio files were constructed such that the critical referents could be heard in four conditions varying by delivery (fluent vs.\@ disfluent) and presence of distraction (absent vs.\@ present). 
 The disfluent variants were created by splicing a prolonged article followed by a filled pause (\spex{Thee, uh}) into the fluent utterances, directly before the mention of the referent.
-This corresponds to the utterance-medial position used by \citet{Loy2016}:
-We considered it to be more believable that such a disfluency would be caused by an environmental distraction.
+This corresponds to the utterance-medial position used in \citet[][Experiment~2]{Loy2016}:
+We considered it to be more believable that an environmental distracion might cause a disfluency in this position than in the utterance-initial position used in \citet[][Experiment~1]{Loy2016}.
 Each referent was paired with a unique clip of ambient traffic and street noise, over which the recordings in their four variants were presented.
 To create a plausible cause of speaker distraction, a 520~ms car-horn sound effect was presented prior to the onset of the referent noun (1100~ms before noun onset for disfluent utterances, 600~ms for fluent utterances). 
 All recordings, ambient noise and sound-effects were normalized and re-sampled to create 48~KHz, 16-bit, stereo Wav files.
@@ -233,18 +233,8 @@ Dog barking & 1 \\
 \subsection{Cover story}
 Central to the design of the present experiment was the requirement that participants believe that the utterances were produced naturally and in a noisy environment. 
 Participants were told that the recordings were made by a participant of a previous experiment which was conducted on the side of a busy street. 
-To corroborate this, during the initial explanation of the experiment, participants were shown three videos which purported to be examples of the speaker producing the utterances. 
-These were presented alongside the images that the speaker spoke about (see Figure \ref{fig:vid}). 
-Participants could thus infer whether the speaker was telling the truth about the treasure's location in each video.
-The speaker in the first video was honest and fluent; in the second she was dishonest and disfluent; and in the third, honest and disfluent but distracted (the speaker glanced sideways towards a car following a car-horn sound effect that occurred immediately prior to her disfluency).
-
-\begin{figure}[Ht]
-  \centering
-	\includegraphics[scale=.2]{convincer.png}
-  \caption{Screenshot of video presented to participants as an example of speaker producing utterances in a noisy environment. The screenshot shows an example of speaker producing a disfluent and dishonest utterance.}
-  \label{fig:vid}
-\end{figure}
-
+To reinforce this context, during the initial explanation of the experiment, participants were shown three videos which purported to be examples of the speaker producing the utterances. 
+These were presented alongside the images that the speaker spoke about, and showed the speaker producing utterances with various combinations of fluency, honesty and distractions.
 
 To ensure that analysis could be run only on data from participants for whom the cover story held, a post-test questionnaire assessed whether participants believed that the utterances were produced outdoors, as claimed.
 Once they had been debriefed about the true nature of the experiment, participants were asked again whether it had occurred to them during the experiment that the recordings might not have been produced outside in the street.
@@ -311,11 +301,11 @@ Eye movement biases were calculated from the proportions of referent to distract
 mouse movement biases were calculated analogously.
 A value of zero in either measure indicates no bias towards either object, and positive and negative values indicate a bias towards the referent and distractor respectively.
 Linear mixed effects models of eye and mouse movements included fixed effects of time ($Z$-scored), delivery (fluent or disfluent) and speaker distraction (absent or present), and all interactions.
-Random intercepts and slopes for time, delivery and distraction were included by subject and by referent.
+Random intercepts and slopes for time, delivery and distraction were included by-participant and by-referent.
 Following \citet{baayen2008analyzing}, we considered effects in these models to be significant where $|t|>2$.
 
 The object clicked (referent or distractor) was modeled using mixed effects logistic regression.
-This model included  fixed effects of delivery (fluent or disfluent) and speaker distraction (absent or present), and all interactions, with random intercepts and slopes for delivery and distraction by subject and by referent.
+This model included  fixed effects of delivery (fluent or disfluent) and speaker distraction (absent or present), and all interactions, with random intercepts and slopes for delivery and distraction by-participant and by-referent.
 
 \subsection{Object click}
 Responses show the same overall tendency to interpret an utterance as truthful as was found by \citet{Loy2016}, with 57\% of trials resulting in a click on the referent and only 43\% on the distractor.
@@ -353,7 +343,7 @@ For fluent utterances, participants displayed an early fixation bias towards the
 For disfluent utterances, the fixation bias towards the referent was greatly reduced ($\beta = -0.60$; $\SE = 0.06$; $t=-10.62$), and a preference for the distractor over the referent emerged later on in the trial.
 When an alternative, local cause of disfluency (the car-horn) was present prior to a disfluency, the bias towards the distractor was significantly reduced ($\beta = 0.18$; $\SE = 0.08$; $t=2.20$).
 The presence of the car-horn was not found to have an effect on the tendency to fixate on the referent for fluent utterances ($t=-0.60$).
-
+\footnote{Interestingly, both the disfluency-deception bias ($\beta = -0.51$; $\SE = 0.05$; $t=-10.84$) and the effect of speaker-distraction ($\beta = 0.26$; $\SE = 0.07$; $t=3.90$) remained even when including participants who did not believe that the utterances were produced naturally and in a noisy environment.}
 
 %JK Model output below
 \iffalse
@@ -402,16 +392,16 @@ tm2:dlvryd: -0.118  0.171  0.254  0.286 -0.704 -0.704 -0.871
 
 \begin{figure}[Ht]
   \centering
-	\includegraphics[width=\linewidth]{eye_fl.pdf}
-  \caption{Mean proportion of fixations to either object (referent and distractor) for fluent utterances split by presence of speaker distraction, calculated out of the total sum of fixations for each 20ms time bin from referent-onset to 2000ms post-onset. Shaded areas represent $\pm 1$ standard error of the mean. Time bins in which a bias towards either the referent or distractor was evident ($|t|>2$) are highlighted with respect to condition and direction of bias (assessed by a mixed effect model estimating the empirical logit of fixations to the referent minus the empirical logit of fixations to the distractor, with by-subject and by-item random intercepts)}
+	\includegraphics[width=\linewidth]{v2_eyef.pdf}
+  \caption{Mean proportion of fixations to either object (referent and distractor) for fluent utterances split by presence of speaker distraction, calculated out of the total sum of fixations for each 20ms time bin from referent-onset to 2000ms post-onset. Shaded areas represent $\pm 1$ standard error of the mean.}
   \label{fig:flueye}
 \end{figure}
 
 
 \begin{figure}[Ht] % might need to change placement
   \centering
-	\includegraphics[width=\linewidth]{eye_disf.pdf}
-  \caption{Mean proportion of fixations to either object (referent and distractor) for disfluent utterances split by presence of speaker distraction, calculated out of the total sum of fixations for each 20ms time bin from referent-onset to 2000ms post-onset. Shaded areas represent $\pm 1$ standard error of the mean. Time bins in which a bias towards either the referent or distractor was evident ($|t|>2$) are highlighted with respect to condition and direction of bias (assessed by a mixed effect model estimating the empirical logit of fixations to the referent minus the empirical logit of fixations to the distractor, with by-subject and by-item random intercepts)}
+	\includegraphics[width=\linewidth]{v2_eyedisf.pdf}
+  \caption{Mean proportion of fixations to either object (referent and distractor) for disfluent utterances split by presence of speaker distraction, calculated out of the total sum of fixations for each 20ms time bin from referent-onset to 2000ms post-onset. Shaded areas represent $\pm 1$ standard error of the mean.}
   \label{fig:diseye}
 \end{figure}
 
@@ -472,16 +462,16 @@ tm3:dlvryd: -0.162  0.201  0.235  0.258 -0.706 -0.703 -0.870
 
 \begin{figure}[Ht]
   \centering
-	\includegraphics[width=\linewidth]{mouse_fl.pdf}
-  \caption{Mean proportion of cumulative distance traveled toward each object (referent or distractor) in fluent conditions split by presence of speaker distraction, from referent onset to 2000ms post-onset. Proportions calculated out of total cumulative distance moved the mouse from referent-onset until that time bin. Shaded areas represent $\pm 1$ standard error of the mean. Time bins in which a bias towards either the referent or distractor was evident ($|t|>2$) are highlighted with respect to condition and direction of bias (assessed by a mixed effect model estimating the empirical logit of movements to the referent minus the empirical logit of movements to the distractor, with by-subject and by-item random intercepts)}
+	\includegraphics[width=\linewidth]{v2_mousefl.pdf}
+  \caption{Mean proportion of cumulative distance traveled toward each object (referent or distractor) in fluent conditions split by presence of speaker distraction, from referent onset to 2000ms post-onset. Proportions calculated out of total cumulative distance moved the mouse from referent-onset until that time bin. Shaded areas represent $\pm 1$ standard error of the mean.}
   \label{fig:mflu}
 \end{figure}
 
 
 \begin{figure}[Ht]
   \centering
-	\includegraphics[width=\linewidth]{mouse_disf.pdf}
-  \caption{Mean proportion of cumulative distance traveled toward each object (referent or distractor) in disfluent conditions split by presence of speaker distraction, from referent onset to 2000ms post-onset. Proportions calculated out of total cumulative distance moved the mouse from referent-onset until that time bin. Shaded areas represent $\pm 1$ standard error of the mean. Time bins in which a bias towards either the referent or distractor was evident ($|t|>2$) are highlighted with respect to condition and direction of bias (assessed by a mixed effect model estimating the empirical logit of movements to the referent minus the empirical logit of movements to the distractor, with by-subject and by-item random intercepts)}
+	\includegraphics[width=\linewidth]{v2_mousedisf.pdf}
+  \caption{Mean proportion of cumulative distance traveled toward each object (referent or distractor) in disfluent conditions split by presence of speaker distraction, from referent onset to 2000ms post-onset. Proportions calculated out of total cumulative distance moved the mouse from referent-onset until that time bin. Shaded areas represent $\pm 1$ standard error of the mean.}
   \label{fig:mdis}
 \end{figure}
 
